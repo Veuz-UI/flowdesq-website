@@ -195,6 +195,10 @@
 		height: 300px;
 		opacity: 0.3;
 	}
+
+	.key-feature-card-img {
+  		height: 230px;
+	}
 	
 
 }
@@ -271,6 +275,10 @@
 	}
 	.cta-btn a {
   		padding: 15px 25px;
+	}
+
+	.key-feature-card-img {
+		height: 200px;
 	}
 
 	.right-demo-enquire {
@@ -382,6 +390,14 @@
 	.gradient-box p {
   		font-size: 16px;
 	}
+
+	.productivity {
+  		padding: 40px 0;
+	}
+
+	.dashboard {
+		padding-bottom: 100px !important;
+	}
 	
 
 	
@@ -409,6 +425,17 @@
 	.feature-number {
 		font-size: 2rem;
 		min-width: 50px;
+	}
+
+	.key-feature-card-img {
+		height: 300px;
+	}
+
+	.demo-logo {
+		width: 120px;
+	}
+	.demo-footer {
+		padding: 15px 25px 15px;
 	}
 
 	.smarter .sidebar {
@@ -463,6 +490,23 @@
 	}
 	.integration h2 {
 		font-size: 25px;
+	}
+
+	.left-book-session h6 {
+  		font-size: 16px;
+	}
+	.left-book-session h3 {
+  		font-size: 25px;
+	}
+	.right-book-session-item p {
+  		font-size: 16px;
+	}
+	.right-book-session-item h5 {
+  		font-size: 18px;
+	}
+
+	.testim-in p {
+  		font-size: 16px;
 	}
 
 	.second-btn,
@@ -652,14 +696,14 @@
   		font-size: 60px;
 	}
 	.faq-header h6 {
-		font-size: 14px;
+		font-size: 16px;
 		margin-bottom: 5px;
 	}
 	.qt {
     	padding: 22px;
 	}
 	.qt button {
-		font-size: 14px;
+		font-size: 16px;
 		padding: 10px 20px;
 	}
 	.qt h2 {
@@ -668,7 +712,7 @@
 	}
 
 	.description {
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 22px;
 	}
 	
@@ -682,6 +726,10 @@
 
 	.download-pg-btn {
 		width: 75%;
+	}
+
+	.key-feature-card-img {
+		height: 250px;
 	}
 
 	.stats-box {
@@ -706,7 +754,7 @@
 		font-size: 25px;
 	}
 	.head-title p {
-		font-size: 14px;;
+		font-size: 16px;;
 		line-height: 22px;
 	}
 
@@ -719,13 +767,12 @@
 	}
 	.demo-footer {
 		display: block;
-		padding: 20px 50px;
 	}
 	.btn-custom {
 		padding: 10px 18px;
 		border-radius: 8px;
 		font-weight: 300;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.round-planet{
@@ -734,6 +781,18 @@
 
 	.gradient-box {
 		padding: 15px;
+	}
+
+	.key-feature-card h3 {
+  		font-size: 20px;
+	}
+
+	.demo-content {
+  		min-height: 400px;
+	}
+
+	.image-box {
+		max-height: 350px;
 	}
 
 
@@ -823,6 +882,10 @@
 	.right-ft-newsletter input {
   		width: 100% !important;
   		margin-bottom: 10px;
+	}
+
+	.key-feature-card-img {
+		height: 200px;
 	}
 	
 
