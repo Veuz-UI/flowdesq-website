@@ -145,6 +145,56 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
+
+	.tabs-outer{
+		order: -1;
+	}
+	.nav-tabs {
+  		width: 100%;
+	}
+	.nav-tabs {
+  		flex-direction: initial;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		padding: 5px 0 35px;
+	}
+	.nav-item{
+		width: 30%;
+		min-width: 250px;
+		display: inline-block;
+	}
+	.gradient-box {
+  		padding: 30px;
+	}
+	.nav-tabs .nav-link {
+  		padding: 15px 15px;
+	}
+	.nav-tabs .nav-link.active::before{
+		display: none;
+	}
+	.nav-tabs .nav-link.active::after {
+		top: auto;
+		right: auto;
+		left: 45%;
+		bottom: -25px;
+		transform: translateY(-50%);
+		font-size: 20px;
+		rotate: 90deg;
+	}
+	.tabs-outer{
+		padding-bottom: 20px;
+	}
+
+	.ft-btm-cont {
+  		gap: 10px;
+	}
+
+	.dashboard-bg-color1::before,
+	.dashboard-bg-color2::before {
+		width: 50%;
+		height: 300px;
+		opacity: 0.3;
+	}
 	
 
 }
@@ -319,7 +369,19 @@
 		border-radius: 0;
 	}
 	
+	.tab-content{
+		padding-bottom: 25px;
+	}
+	.image-box {
+  		max-height: 500px;
+	}
 
+	.gradient-box h1 {
+  		font-size: 28px;
+	}
+	.gradient-box p {
+  		font-size: 16px;
+	}
 	
 
 	
@@ -668,6 +730,10 @@
 
 	.round-planet{
 		display: none;
+	}
+
+	.gradient-box {
+		padding: 15px;
 	}
 
 

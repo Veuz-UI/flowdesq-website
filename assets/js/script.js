@@ -259,17 +259,42 @@ $(document).on('click', '.custom-next', function(e) {
   //   });
   // });
 
-// Sync image tabs with content tabs
-        const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+
+
+// // Sync image tabs with content tabs
+//         const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
         
-        tabButtons.forEach(button => {
-            button.addEventListener('shown.bs.tab', function (e) {
-                const imageId = this.getAttribute('data-image');
-                const imageTab = document.querySelector(`#${imageId}`);
-                const bsTab = new bootstrap.Tab(imageTab);
-                bsTab.show();
+//         tabButtons.forEach(button => {
+//             button.addEventListener('shown.bs.tab', function (e) {
+//                 const imageId = this.getAttribute('data-image');
+//                 const imageTab = document.querySelector(`#${imageId}`);
+//                 const bsTab = new bootstrap.Tab(imageTab);
+//                 bsTab.show();
+//             });
+//         });
+
+
+// Sync image tabs with content tabs
+const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+
+tabButtons.forEach(button => {
+    button.addEventListener('shown.bs.tab', function (event) {
+        const imageId = this.getAttribute('data-image');
+        const imageTabElement = document.querySelector(`#${imageId}`);
+        
+        if (imageTabElement) {
+            // Remove active from all image panes
+            document.querySelectorAll('#imageTabContent .tab-pane').forEach(pane => {
+                pane.classList.remove('show', 'active');
             });
-        });
+            
+            // Activate the target image pane
+            imageTabElement.classList.add('show', 'active');
+        }
+    });
+});
+
+
   
 
 
