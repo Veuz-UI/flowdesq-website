@@ -681,8 +681,11 @@
   		font-size: 12px;
 	}
 
-	.right-nav-top .wrap{
+	.right-nav-top .desc-btn{
 		display: none;
+	}
+	.right-nav-top .mob-btn{
+		display: block;
 	}
 
 	.faq-header h3, .client-header h2 {

@@ -1,21 +1,16 @@
 //// loader
-document.addEventListener('DOMContentLoaded', function() {
-      const loader = document.querySelector('.loader');
+document.addEventListener('DOMContentLoaded', function () {
+  const loader = document.querySelector('.main-loader');
 
-      window.addEventListener('load', function() {
-          // Keep loader for 1.5s
-          setTimeout(() => {
-              loader.classList.add('fade-out'); // start fading
-              
-              // Remove completely after fade finishes
-              loader.addEventListener('transitionend', () => {
-                  loader.remove(); // ensures it's gone from DOM
-              }, { once: true });
+  // Hide loader after content loads
+  window.addEventListener('load', function () {
+    setTimeout(() => {
+      loader.style.display = 'none';
 
-          }, 1500);
-      });
+    }, 1300); // Adjust time as needed
   });
-//// END loader
+});
+// END pre loader
 
 //// mobile header
 const menuButton = document.querySelector('.menu-button');
