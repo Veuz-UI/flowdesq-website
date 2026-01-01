@@ -510,7 +510,7 @@ a {
 .description{
   font-size: 18px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 30px;
   color: #A4A4A4;
   margin-bottom: 0;
 }
@@ -1151,12 +1151,15 @@ a {
   font-size: 22px;
 }
 .left-stay-connect-in ul li::before {
-  content: "↗";
+  content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  color: #ff3b3b; 
-  font-weight: bold;
+  top: 0.4em;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/arrow-color.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .right-stay-connect-in {
@@ -1466,19 +1469,29 @@ a {
 }
 
 .pricing-card:not(.featured) .cta-button:hover {
-  background: #333;
+  background: var(--gradient);
   /* transform: translateX(-5px); */
+}
+
+.pricing-card .cta-button svg,
+.pricing-card .main-btn svg {
+  transition: transform 0.3s ease;
+}
+.pricing-card .cta-button:hover svg,
+.pricing-card .main-btn:hover svg {
+  transform: rotate(45deg);
 }
 
 .pricing-card.featured .cta-button {
   background: linear-gradient(135deg, #ff8c42, #ff6b42);
   color: white;
   box-shadow: 0 4px 15px rgba(255, 107, 66, 0.3);
+  border-radius: 50px;
 }
 
 .pricing-card.featured .cta-button:hover {
   box-shadow: 0 6px 20px rgba(255, 107, 66, 0.4);
-  transform: translateX(5px);
+  transform: translateY(-5px);
 }
 
 .guarantee-text {
@@ -1783,6 +1796,27 @@ a {
   border-top: 1px solid #ddddddde;
 }
 
+.testim-in{
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.testim-in .owl-theme .owl-dots{
+  position: absolute;
+  right: -10%;
+  display: flex;
+  flex-direction: column;
+}
+.testim-in .owl-theme .owl-dots .owl-dot span {
+  width: 4px;
+  height: 30px;
+}
+.testim-in .owl-theme .owl-dots .owl-dot.active span,
+.testim-in .owl-theme .owl-dots .owl-dot:hover span{
+  background: var(--main-color);
+}
+
 .testim-in p{
   font-size: 18px;
   margin-top: 20px;
@@ -2057,7 +2091,10 @@ a {
 .work-space-img img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  border-radius: 30px;
+}
+.work-space-cont-in{
+  padding-left: 20px;
 }
 
 /* ---------------- END work-space --------------- */
@@ -2475,7 +2512,7 @@ a {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 3px 8px rgba(164, 164, 164, 0.35);
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .dashboard-in:nth-child(1){
   top: 100px;
