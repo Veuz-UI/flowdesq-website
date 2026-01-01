@@ -1472,6 +1472,9 @@ a {
   background: var(--gradient);
   /* transform: translateX(-5px); */
 }
+.pricing-card.active .cta-button:hover{
+  background: #000;
+}
 
 .pricing-card .cta-button svg,
 .pricing-card .main-btn svg {
@@ -3073,7 +3076,7 @@ download-pg-btn-out mt-4
 #scroll span {
     position:absolute;
     top:50%;
-    left:50%;
+    right:10%;
     margin-left:-8px;
     margin-top:-12px;
     height:0;
@@ -3082,10 +3085,10 @@ download-pg-btn-out mt-4
     border-bottom-color:#ffffff;
 }
 #scroll:hover {
-    background-color:var(--main-color);
-    opacity:1;
-	filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
+  background-color: var(--main-color);
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
 }
 /* END return scroll */
 
