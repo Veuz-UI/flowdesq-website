@@ -743,6 +743,10 @@ a {
 	position: relative;
   margin-top: -450px;
 }
+.lapimg video{
+  width: 100%;
+  height: 100%;
+}
 
 .key-feature-card {
   background: #F8F8FA;
@@ -757,9 +761,10 @@ a {
   margin-bottom: 20px;
 }
 
-.key-feature-card img {
+.key-feature-card video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -2614,7 +2619,7 @@ a {
 .signup-form-in-img{
   margin-bottom: 30px;
 }
-.signup-form-in-img img {
+.signup-form-in-img video {
   width: 100%;
   height: 100%;
   object-fit: cover;
