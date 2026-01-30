@@ -17,17 +17,11 @@
   <!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/xxmzBrw.css"> -->
   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
-  <!-- Select2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
-
-    <!-- International Tel Input CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-
 </head>
 
 <body>
 
-  <!-- loader -->
+<!-- loader -->
   <div class="main-loader" id="initial-loader">
     <img src="assets/img/loader.gif" alt="Loading..." />
   </div>
@@ -42,20 +36,16 @@
           <div class="header-img">
             <a href="index.html"><img src="assets/img/logo-svg.svg" alt=""></a>
           </div>
-
-          <div class="nav-desc-menu">
+          <!-- header nav icons -->
+           <div class="nav-desc-menu">
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="demo.html">Demo</a></li>
               </ul>
             </div>
-            
-          <!-- header nav icons -->
           <div class="right-nav-top">
-            <!-- menu -->
             <div class="menu-outr">
               <div class="menu-button">
                 <div class="" id='btn__line'></div>
@@ -68,7 +58,6 @@
                   <a href="index.html">Home</a>
                   <a href="features.html">Features</a>
                   <a href="pricing.html">Pricing</a>
-                  <a href="enquiry.html">Enquiry</a>
                   <a href="demo.html">Demo</a>
                   <div class="wrap mob-btn">
                     <a href="signup.html" class="second-btn">Signup for free trial</a>
@@ -104,7 +93,6 @@
       </div>
     </section>
 
-
     <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
     <div class="download-brochure">
        DOWNLOAD BROCHURE 
@@ -112,232 +100,156 @@
     </a>
 
 
-  <!-- Enquire now -->
-  <section class="section-padding demo-enquire">
+  <!-- pricing plan -->
+  <section class="section-padding otp">
     <div class="width-container">
-      <div class="demo-enquire-in">
 
+      <div class="col-md-12 otp-in">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-12 col-lg-6">
-              <div class="download-desc-img">
-                <video autoplay="" muted="" loop="" playsinline="">
-                  <source src="assets/img/laptop.webm" type="video/webm">
-                </video>
-                <!-- <img src="assets/img/laptop_download.gif" class="img-fluid" alt=""> -->
-              </div>
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <div class="left-demo-enquire">
-              <div class="head-title w-100">
-                <h2 class="section-title text-start mt-2">
-                  Download FlowDesQ <br>
-                   <span>Tracking</span> App 
-                </h2>
-                <p class="mb-0 text-start">
-                  Sign up for a FlowDesQ account, then download the app to begin tracking!
-                </p>
-              </div>
 
-              <div class="download-pg-btn-out mt-4">
-                <div class="download-pg-btn">
-                  <button class="main-btn w-100"><i class="fa-brands fa-windows"></i> Download For Windows</button>
-                  <button class="main-btn"><i class="fa-brands fa-linux"></i>&nbsp;&nbsp;&nbsp; Linux &nbsp;&nbsp;&nbsp;</button>
-                  <button class="main-btn"><i class="fa-brands fa-apple"></i>&nbsp;&nbsp;&nbsp; Mac &nbsp;&nbsp;&nbsp;</button>
+          <div class="col-md-10">
+            <div class="otp-wrapper">
+
+
+
+                <div class="row g-4">
+
+                  <!-- LEFT SIDE -->
+                  <div class="col-lg-7">
+                    <div class="upgrade-logo">
+                      <img src="assets/img/logo.png" class="img-fluid" alt="">
+                    </div>
+
+                    <h3 class="fw-bold mt-3">Upgrade to Premium</h3>
+                    <p class="note">
+                      Do more with unlimited blocks, files, automations & integrations.
+                    </p>
+
+                    <div class="bill-input">
+                      <label class="form-label">Billed To</label>
+                      <input type="text" class="form-control" value="Jane Smith">
+                    </div>
+
+                    <div class="upgrade-mode-out mb-3">
+                      <label class="form-label mt-2">Payment Mode</label>
+                      <div class="d-flex gap-2 flex-wrap">
+                        <div class="upgrade-mode active">
+                          <div class="upgrade-mode-icon">
+                            <img src="assets/img/pay-icon01.png" class="img-fluid" alt="">
+                          </div>
+                          <h5>Credit Card</h5>
+                        </div>
+                        <div class="upgrade-mode">
+                          <div class="upgrade-mode-icon">
+                            <img src="assets/img/pay-icon02.png" class="img-fluid" alt="">
+                          </div>
+                          <h5>Bank Transfer</h5>
+                        </div>
+                        <div class="upgrade-mode">
+                          <div class="upgrade-mode-icon">
+                            <img src="assets/img/pay-icon03.png" class="img-fluid" alt="">
+                          </div>
+                          <h5>G-Pay</h5>
+                        </div>
+                        <div class="upgrade-mode">
+                          <div class="upgrade-mode-icon">
+                            <img src="assets/img/pay-icon04.png" class="img-fluid" alt="">
+                          </div>
+                          <h5>Offline</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="notes-input mb-3">
+                      <label class="form-label">Notes</label>
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+
+                    <div class="transaction-input mb-3">
+                      <label class="form-label">Transaction ID</label>
+                      <input type="text" class="form-control" value="102258">
+                    </div>
+
+                    <!-- <div class="upgrade-btn">
+                      <button class="btn upgrade-btn-cancel w-50">Cancel</button>
+                      <button class="btn upgrade-btn-submit w-50">Submit</button>
+                    </div> -->
+
+                    <div class="main-btn-out mt-5 upgrade-btn">
+                            <button type="button" class="close-btn w-100">
+                                Cancel
+                            </button>
+                            <button type="submit" class="main-btn w-100">
+                                Request
+                            </button>
+                    </div>
+
+                    <p class="note mt-3">
+                      By providing your card information, you allow us to charge your card
+                      for future payment in accordance with their terms.
+                    </p>
+                  </div>
+
+                  <!-- RIGHT SIDE -->
+                  <div class="col-lg-5">
+                    <div class="select-sub">
+                      <h6 class="mb-3">Select Subscription</h6>
+                      <div class="select-sub-list">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="plan">
+                          <label class="form-check-label">
+                            <strong>Pay Monthly</strong><br>
+                            <small class="text-muted">Rs 599 / Month / Member</small>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="select-sub-list active">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">
+                          Active
+                        </span>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="plan" checked>
+                          <label class="form-check-label">
+                            <strong>Pay Annual</strong><br>
+                            <small class="text-muted">
+                              Rs 5000 / Year (Expiry on 31-12-2026)
+                            </small>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="border-top pt-3">
+                        <div class="d-flex justify-content-between">
+                          <span>Total Paid Amount</span>
+                          <strong>Rs. 5000</strong>
+                        </div>
+
+                        <div class="d-flex justify-content-between text-muted">
+                          <span>Actual Amount</span>
+                          <span>Rs. 8000</span>
+                        </div>
+
+                        <p class="small text-muted mt-3">
+                          🔒 Guaranteed to be safe & secure, ensuring all transactions
+                          are protected with the highest level of security.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
 
-                <button class="demo-btn"><span>
-                  <i class="fa-regular fa-circle-play"></i></span> Installation Video
-                </button>
-              </div>
+              
 
             </div>
           </div>
-          
         </div>
       </div>
     </div>
   </section>
 
-    <!-- work-space -->
-    <section class="book-session">
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-        <div class="col-md-5">
-          <div class="left-book-session">
-            <h6>Let’s Talk – Book a 1:1 Chat </h6>
-            <h3>Book a session with our product expert to explore how FlowDesQ can align with your team's specific needs. </h3>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="right-book-session">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <div class="right-book-session-item">
-                  <div class="icon">
-                    <img src="assets/img/icon-1.svg" class="img-fluid" alt="">
-                  </div>
-                  <h5>Quick form fill</h5>
-                  <p> Just a few company details to get started.</p>
-                  <div class="right-arrow">
-                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6"></div>
-              <div class="col-md-6">
-                <div class="right-book-session-item">
-                  <div class="icon">
-                    <img src="assets/img/icon-2.svg" class="img-fluid" alt="">
-                  </div>
-                  <h5>Book your call</h5>
-                  <p>Pick a time that works best for you.</p>
-                  <div class="right-arrow">
-                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-book-session-item">
-                  <div class="icon">
-                    <img src="assets/img/icon-3.svg" class="img-fluid" alt="">
-                  </div>
-                  <h5>Help us prep</h5>
-                  <p>Answer a couple of questions so we come ready with answers. </p>
-                  <div class="right-arrow">
-                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6"></div>
-              <div class="col-md-6">
-                <div class="right-book-session-item">
-                  <div class="icon">
-                    <img src="assets/img/icon-4.svg" class="img-fluid" alt="">
-                  </div>
-                  <h5>That’s it!</h5>
-                  <p>You’re booked—get ready for a productive session.</p>
-                  <div class="right-arrow">
-                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
 
-
-  <!-- testimonials -->
-  <section class="section-padding testimonials-outr">
-    <div class="width-container">
-
-      <div class="testimonial-in">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="head-title m-0">
-              <h2 class="text-start">Look What Our <br> Customers Say!</h2>
-              <p class="text-start">
-                Fusce venenatis tellus a felis scelerisque, <br> non pulvinar est pellentesque. 
-              </p>
-
-              <div class="custom-nav">
-                <button class="custom-prev">
-                  <i class="fa fa-chevron-left"></i>
-                </button>
-                <button class="custom-next">
-                  <i class="fa fa-chevron-right"></i>
-                </button>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="testim-in">
-              <div class="owl-carousel owl-theme testimonial-carousel">
-                <div class="item">
-                  <div class="testimonial-exclamation">
-                    <img src="assets/img/quatation.png" class="img-fluid" alt="">
-                  </div>
-                  <p>
-                    I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly
-                    to find us the perfect home. We couldn't be happier with our new place!
-                  </p>
-                  <div class="testimonial-card-in">
-                    <div class="testim-in-item">
-                      <div class="testimonial-card-img">
-                        <img src="assets/img/icon.png" class="img-fluid" alt="">
-                      </div>
-                      <h5>John Doe</h5>
-                    </div>
-                    <div class="right-testimonial-card">
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="testimonial-exclamation">
-                    <img src="assets/img/quatation.png" class="img-fluid" alt="">
-                  </div>
-                  <p>
-                    I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly
-                    to find us the perfect home. We couldn't be happier with our new place!
-                  </p>
-                  <div class="testimonial-card-in">
-                    <div class="testim-in-item">
-                      <div class="testimonial-card-img">
-                        <img src="assets/img/icon.png" class="img-fluid" alt="">
-                      </div>
-                      <h5>John Doe</h5>
-                    </div>
-                    <div class="right-testimonial-card">
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="testimonial-exclamation">
-                    <img src="assets/img/quatation.png" class="img-fluid" alt="">
-                  </div>
-                  <p>
-                    I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly
-                    to find us the perfect home. We couldn't be happier with our new place!
-                  </p>
-                  <div class="testimonial-card-in">
-                    <div class="testim-in-item">
-                      <div class="testimonial-card-img">
-                        <img src="assets/img/icon.png" class="img-fluid" alt="">
-                      </div>
-                      <h5>John Doe</h5>
-                    </div>
-                    <div class="right-testimonial-card">
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star yellow"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 <!-- footer -->
@@ -553,13 +465,6 @@
   <script>
     AOS.init();
   </script>
-
-
-
-<!-- Select2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <!-- International Tel Input JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
 
 </body>

@@ -7,7 +7,11 @@
 		padding: 10px 0;
 	}
 }
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+	.book-session {
+		padding-left: 50px;
+	}
+}
 
 @media (max-width: 1500px) {
 	.login-btn,
@@ -363,10 +367,17 @@
 	}
 
 	.demo-content-in {
-		padding: 0 0 30px 30px;
+		padding-bottom: 30px;
 	}
-	.right-demo-content {
-		padding-left: 12px;
+	.demo-content-in h2,
+	.demo-content-in p{
+		text-align: center !important;
+	}
+	.demo-footer {
+		width: fit-content;
+		padding: 15px 20px;
+		gap: 25px;
+		margin: 0 auto;
 	}
 
 	.demo-image{
@@ -403,7 +414,26 @@
 		padding-left: initial;
 	}
 
-	
+	.book-session {
+        padding-left: 20px;
+    }
+
+	/* pricing table */
+	.table-head-overview,
+	.table-head-inner {
+  		font-size: 18px;
+		line-height: 20px;
+	}
+	.table-head th span {
+		font-size: 14px;
+	}
+	.right-table-head {
+		width: 35px;
+		height: 35px;
+	}
+	.right-table-head svg {
+ 		 width: 12px;
+	}
 
 	
 }
@@ -434,13 +464,6 @@
 
 	.key-feature-card-img {
 		height: 300px;
-	}
-
-	.demo-logo {
-		width: 120px;
-	}
-	.demo-footer {
-		padding: 15px 25px 15px;
 	}
 
 	.smarter .sidebar {
@@ -604,6 +627,10 @@
 	.right-faq .accordion-button {
 		padding: 1.2rem 1.5rem;
 		font-size: 1rem;
+	}
+
+	.book-session {
+		padding-left: 15px;
 	}
 
 
@@ -770,19 +797,6 @@
 		margin-bottom: 15px;
 	}
 
-	.demo-image img {
-		height: 350px;
-	}
-	.demo-footer {
-		display: block;
-	}
-	.btn-custom {
-		padding: 10px 18px;
-		border-radius: 8px;
-		font-weight: 300;
-		font-size: 16px;
-	}
-
 	.round-planet{
 		display: none;
 	}
@@ -803,7 +817,14 @@
 		max-height: 350px;
 	}
 
+	.book-session {
+        padding-left: initial;
+    }
 
+	/* pricing table */
+	.table-head-inner {
+  		display: block;
+	}
 	
 
 }
@@ -878,6 +899,10 @@
 }
 
 @media (max-width: 500px) {
+	.demo-footer {
+		justify-content: center;
+    	gap: 15px;
+	}
 	.download-pg-btn {
 		width: 90%;
 	}
