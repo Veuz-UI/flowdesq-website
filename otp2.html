@@ -65,83 +65,52 @@
   </div>
 </header>
 
-
   <!-- pricing plan -->
-  <section class="section-padding otp pt-150">
+  <section class="section-padding otp  pt-150">
     <div class="width-container">
-
+          
       <div class="col-md-12 otp-in">
         <div class="row justify-content-center align-items-center">
 
-          <div class="col-md-8 col-lg-7 col-xl-5">
-            <div class="otp-wrapper">
+        <div class="col-md-8 col-lg-7 col-xl-5">
+          <div class="otp-wrapper">
+            <div class="step">1 OF 4 STEPS COMPLETED</div>
 
-              <div class="step">2 OF 4 STEPS COMPLETED</div>
-              <h3>Create Organisation</h3>
-              <p class="note">
-                Note: You can always change this later, or support multiple configurations at the same time.
+            <h3>OTP Verification</h3>
+            <p class="subtitle">Please enter the OTP to verify your email.</p>
+
+            <p class="note">
+              Note: You can always change this later, or support multiple configurations at the same time.
+            </p>
+
+            <div class="otp-box">
+              <div class="otp-inputs">
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+              </div>
+
+              <div class="timer" id="timer">02:30</div>
+
+              <p class="resend-text">
+                I didn't receive any code.
+                <a href="#" id="resend">Resend</a>
               </p>
 
-              <form id="loginForm" class="form-wrapper" action="login-option2.html" method="POST">
-                <div class="floating-label">
-                  <input type="text" name="name" id="name" placeholder="Your Company" />
-                  <label>Name of Your Company <span class="required">*</span></label>
-                </div>
-                <div class="floating-label">
-                  <input type="email" name="email" id="email" placeholder=" " />
-                  <label>Company Email <span class="required">*</span></label>
-                </div>
-                <div class="floating-label">
-                  <input type="text" name="name" id="name" placeholder="Your Company" />
-                  <label>Which industry does your company <span class="required">*</span></label>
-                </div>
-                <div class="floating-label">
-                  <input type="text" name="number_of_users" id="number_of_users" placeholder="Number Of Users" min="1"
-                    step="1" />
-                  <label>Number Of Users <span class="required">*</span></label>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="floating-label2">
-                      <select id="country">
-                        <option value="" selected hidden></option>
-                        <option value="India">India</option>
-                        <option value="USA">United States</option>
-                        <option value="UK">United Kingdom</option>
-                        <option value="UAE">United Arab Emirates</option>
-                      </select>
-                      <label>Country</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="floating-label2">
-                      <select id="timezone">
-                        <option value="" selected hidden></option>
-                        <option value="Asia/Calcutta">Asia/Calcutta</option>
-                        <option value="Asia/Dubai">Asia/Dubai</option>
-                        <option value="Europe/London">Europe/London</option>
-                        <option value="America/New_York">America/New_York</option>
-                      </select>
-                      <label>Time zone</label>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- FOOTER -->
-                <div class="main-btn-out mt-4 actions">
-                  <a href="otp.html" class="btn back mb-0">Previous Step</a>
-                  <a href="login-option2.html" class="main-btn">Next Step</a>
-                </div>
-
-                
-              </form>
+              <div class="main-btn-out mt-4">
+                <a href="login2-option.html"><button type="submit" class="main-btn">Submit</button></a>
+              </div>
             </div>
           </div>
         </div>
+
+        
+        </div>
       </div>
     </div>
-  </section>
+</section>
 
 
 

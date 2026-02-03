@@ -83,8 +83,6 @@
 
             <div class="col-md-6 col-lg-6">
               <div class="login-form-in">
-
-
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
@@ -130,6 +128,16 @@
                         <label>Email Address <span class="required">*</span></label>
                       </div>
 
+                      <div class="floating-label2">
+                        <select id="timezone">
+                          <option value="" selected hidden></option>
+                          <option value="Professionsl">Professionsl</option>
+                          <option value="Basic">Basic</option>
+                          <option value="Premium">Premium</option>
+                        </select>
+                        <label>Select Your Plan</label>
+                      </div>
+
                       <div class="floating-label">
                         <input type="password" name="password" id="password" placeholder=" ">
                         <label>Password <span class="required">*</span></label>
@@ -142,7 +150,7 @@
                       </div>
 
                       <div class="main-btn-out mt-4">
-                        <button type="submit" class="main-btn">Signup for free trial</button>
+                        <button type="submit" class="main-btn" onclick="window.location.href='otp2.html'">Purchase Now</button>
                       </div>
                       <p class="description dont-account text-center mt-4">
                         14-Day Free Trial • Cancel Anytime

@@ -261,23 +261,19 @@ tabButtons.forEach(button => {
 
 
 // return scroll
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#scroll').fadeIn();
-    } else {
-      $('#scroll').fadeOut();
-    }
-  });
-
-  $('#scroll').click(function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 600);
-  });
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
 });
-
-
-
 
 
 //// otp
@@ -423,53 +419,21 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('.table-head th[data-col="4"]')?.click();
 
 });
-// /// table hover effects
-// document.addEventListener("DOMContentLoaded", function () {
-//     alert('JS LOADED');
-//   const headerTHs = document.querySelectorAll(".table-head th[data-col]");
-//   const dataTable = document.querySelector(".sticky-table");
 
-//   if (!dataTable) return;
-//   function clearColumnClasses() {
-//     dataTable.querySelectorAll("td").forEach(td => {
-//       td.classList.remove("col-active", "col-hover");
-//     });
-//   }
-//   function highlightColumn(colIndex, className) {
-//     dataTable.querySelectorAll("tbody tr").forEach(row => {
-//       const td = row.children[colIndex - 1];
-//       if (td && !td.classList.contains("feature-name")) {
-//         td.classList.add(className);
-//       }
-//     });
-//   }
-//   headerTHs.forEach(th => {
-//     const col = parseInt(th.dataset.col);
-//     const inner = th.querySelector(".table-head-inner");
-//     // CLICK → ACTIVE COLUMN
-//     th.addEventListener("click", () => {
-//       document.querySelectorAll(".table-head-inner").forEach(el => {
-//         el.classList.remove("active");
-//       });
-//       clearColumnClasses();
-//       inner?.classList.add("active");
-//       highlightColumn(col, "col-active");
-//     });
-//     // HOVER → TEMP COLUMN
-//     th.addEventListener("mouseenter", () => {
-//       if (!inner?.classList.contains("active")) {
-//         highlightColumn(col, "col-hover");
-//       }
-//     });
-//     th.addEventListener("mouseleave", () => {
-//       dataTable.querySelectorAll(".col-hover").forEach(td => {
-//         td.classList.remove("col-hover");
-//       });
-//     });
-//   });
-//   /* Default active column on load (Business = col 4) */
-//   document.querySelector('.table-head th[data-col="4"]')?.click();
-// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modes = document.querySelectorAll(".upgrade-mode");
+
+  modes.forEach(mode => {
+    mode.addEventListener("click", function () {
+      // remove active from all
+      modes.forEach(item => item.classList.remove("active"));
+
+      // add active to clicked
+      this.classList.add("active");
+    });
+  });
+});
 
 document.querySelectorAll('.option-card').forEach(card => {
     card.addEventListener('click', () => {
@@ -495,5 +459,16 @@ document.getElementById('openSignupTab').addEventListener('click', function (e) 
 
 
 
+// login signup 
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.location.hash === "#signup") {
+    const signupTab = new bootstrap.Tab(
+      document.querySelector('#profile-tab')
+    );
+    signupTab.show();
+  }
+});
+
+// upgrade page
 
   

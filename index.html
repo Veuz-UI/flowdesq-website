@@ -42,8 +42,7 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="features.html">Features</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="demo.html">Demo</a></li>
+                <li><a href="demo.html">Request a Demo</a></li>
               </ul>
             </div>
           <div class="right-nav-top">
@@ -59,13 +58,12 @@
                   <a href="index.html" class="active">Home</a>
                   <a href="features.html">Features</a>
                   <a href="pricing.html">Pricing</a>
-                  <a href="enquiry.html">Enquiry</a>
-                  <a href="demo.html">Demo</a>
+                  <li><a href="demo.html" class="active">Request a Demo</a></li>
                   <div class="wrap mob-btn">
-                    <a href="signup.html" class="second-btn">Signup for free trial</a>
+                    <a href="login.html#signup" class="second-btn">Signup for free trial</a>
                   </div>
                   <div class="wrap mob-btn">
-                    <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    <a class="login-btn" href="login.html">
                       Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
                   </div>
                 </nav>
@@ -73,10 +71,10 @@
             </div>
 
             <div class="wrap desc-btn">
-              <a href="signup.html" class="second-btn">Signup for free trial</a>
+              <a href="login.html#signup" class="second-btn">Signup for free trial</a>
             </div>
             <div class="wrap desc-btn">
-              <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+              <a class="login-btn" href="login.html">
                 Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
             </div>
           </div>
@@ -87,10 +85,10 @@
 
 
 <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
-    <div class="download-brochure">
-       DOWNLOAD BROCHURE 
-    </div>
-    </a>
+  <div class="download-brochure">
+    DOWNLOAD BROCHURE
+  </div>
+</a>
 
 
 
@@ -109,7 +107,7 @@
                 Advanced Employee Monitoring & Productivity Management Solution designed for modern businesses. 
                 Track performance, easy integrations, and unify your workforce connectivity — all in one place.
               </p>
-              <a href="login.html"><button class="cta-button">START FREE TRIAL NOW</button></a>
+              <a href="login.html#signup"><button class="cta-button">START FREE TRIAL NOW</button></a>
             </div>
           </div>
         </div>
@@ -123,7 +121,6 @@
           <video autoplay="" muted="" loop="" playsinline="">
             <source src="assets/img/laptop_banner.webm" type="video/webm">
           </video>
-          <!-- <img src="assets/img/laptop_banner.gif" class="img-fluid" alt=""> -->
         </div>
       </div>
 
@@ -147,7 +144,6 @@
                     <video autoplay="" muted="" loop="" playsinline="">
                       <source src="assets/img/reporting.webm" type="video/webm">
                     </video>
-                    <!-- <img src="assets/img/reporting.gif" class="img-fluid" alt=""> -->
                   </div>
                   <h3>Reporting & Analytics</h3>
                   <p>
@@ -167,7 +163,6 @@
                     <video autoplay="" muted="" loop="" playsinline="">
                       <source src="assets/img/employee-timing.webm" type="video/webm">
                     </video>
-                    <!-- <img src="assets/img/employee-timing.gif" class="img-fluid" alt=""> -->
                   </div>
                   <h3>Employee Time & Productivity Tracking</h3>
                   <p>
@@ -187,7 +182,6 @@
                     <video autoplay="" muted="" loop="" playsinline="">
                       <source src="assets/img/dashboard.webm" type="video/webm">
                     </video>
-                    <!-- <img src="assets/img/dashboard.gif" class="img-fluid" alt=""> -->
                   </div>
                   <h3>Dashboard & User Management</h3>
                   <p>
@@ -304,7 +298,9 @@
           </div>
 
           <div class="main-btn-out mt-4">
-            <button class="main-btn">Enquire Now</button>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
+              <button class="main-btn">Enquire Now</button>
+            </a>
           </div>
         </div>
       </div>
@@ -358,7 +354,7 @@
           <div class="col-lg-6 col-xl-5 right-demo-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
               <div class="demo-footer">
                 <h6>Try Before You Subscribe <i class="fa-solid fa-arrow-right"></i></h6>
-                <button type="button" class="btn trial-btn">Start your free trial</button>
+                <button type="button" class="btn trial-btn" onclick="window.location.href='login.html#signup'">Start your free trial</button>
               </div>
           </div>
 
@@ -383,8 +379,6 @@
                 Again
             </p>
           </div>
-
-
 
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -425,7 +419,7 @@
                           </svg>
                           <span>+ 10 Users</span>
                       </div>
-                      <button class="cta-button">
+                      <button class="cta-button" onclick="window.location.href='login2.html#signup'">
                           Get Started
                           <span><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 14L14 1M14 1H2.3M14 1V12.7" stroke="white" stroke-linecap="round"
@@ -1275,115 +1269,89 @@
     </div>
   </section>
 
-  <section class="scroll-bar-out">
-    <div class="r-scroll">
-      <a href="#" id="scroll" style="display: none;"><span></span></a>
-    </div>
-  </section>
-
-
-<!-- Modal -->
-<div class="modal nav-request-demo-outr fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header nav-request-demo-head">
-        <div class="nav-request-demo-head-in">
-          <h4 class="modal-title" id="exampleModalLongTitle">Login</h4>
-          <p>Welcome Back! Log in to your account</p>
-        </div>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="nav-request-demo">
-
-          <form class="form-wrapper">
-
-                <div class="floating-label">
-                  <input type="email" placeholder=" " required />
-                  <label>Email Address <span class="required">*</span></label>
-                </div>
-                <div class="floating-label">
-                  <input type="password" placeholder=" " required />
-                  <label>Password <span class="required">*</span></label>
-                </div>
-
-                <div class="main-btn-out mt-4">
-                  <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                  <button class="main-btn">Send Message</button>
-                </div>
-              </form>
-        </div>
-      </div>
-    </div>
+  <div class="r-scroll">
+    <a href="#" id="scroll" style="display: none;"><span><i class="fa-solid fa-arrow-up"></i></span></a>
   </div>
-</div>
-<!-- END Modal -->
 
 
 <!-- Modal -->
-<div class="modal dowload-outr fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal dowload-outr fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header dowload-head">
         <div class="dowload-head-in">
-          <h4 class="modal-title" id="exampleModalLongTitle">Login</h4>
-          <p>Welcome Back! Log in to your account</p>
+          <h4 class="modal-title" id="exampleModalLongTitle">Enquire Now</h4>
         </div>
         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body pt-0">
         <div class="dowload">
-
           <form class="form-wrapper">
+            <div class="floating-label">
+              <input type="text" placeholder=" " required />
+              <label>Name <span class="required">*</span></label>
+            </div>
 
-                <div class="row">
-                  <div class="col-12 col-sm-6">
-                    <div class="floating-label">
-                      <input type="text" placeholder=" " required />
-                      <label>First Name <span class="required">*</span></label>
-                    </div>
-                  </div>
+            <div class="floating-label">
+              <input type="email" placeholder=" " required />
+              <label>Email<span class="required">*</span></label>
+            </div>
 
-                  <div class="col-12 col-sm-6">
-                    <div class="floating-label">
-                      <input type="text" placeholder=" " required />
-                      <label>Last Name <span class="required">*</span></label>
-                    </div>
-                  </div>
-                </div>
+            <!-- Phone -->
+            <div class="floating-label">
+              <input type="tel" placeholder=" " inputmode="numeric" pattern="[0-9]*" required />
+              <label>Mobile<span class="required">*</span></label>
+            </div>
 
-                <div class="floating-label">
-                  <input type="email" placeholder=" " required />
-                  <label>Email Address <span class="required">*</span></label>
-                </div>
+            <div class="floating-label">
+              <textarea name="message" rows="4" placeholder=" " required></textarea>
+              <label>Message <span class="required">*</span></label>
+            </div>
 
-                 <!-- Phone -->
-                <div class="floating-label">
-                  <input
-                    type="tel"
-                    placeholder=" "
-                    inputmode="numeric"
-                    pattern="[0-9]*"
-                    required
-                  />
-                  <label>Phone Number <span class="required">*</span></label>
-                </div>
-
-                <div class="main-btn-out mt-4">
-                  <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                  <button class="main-btn">Send Message</button>
-                </div>
-              </form>
+            <div class="main-btn-out mt-4 req-brochure-btn">
+              <button type="button" class="close-btn w-100" data-bs-dismiss="modal" aria-label="Close">Close</button>
+              <button type="button" class="main-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- END Modal -->
+
+
+<!-- request brochure success message -->
+<div class="modal brochure-request-demo-outr fade bd-example-modal-lg" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header brochure-request-demo-head">
+
+                <div class="brochure-request-demo-head-in">
+                    <div class="success-checkmark">
+                        <div class="check-icon">
+                            <span class="icon-line line-tip"></span>
+                            <span class="icon-line line-long"></span>
+                            <div class="icon-circle"></div>
+                            <div class="icon-fix"></div>
+                        </div>
+                    </div>
+                    <h4 class="modal-title" id="exampleModalLongTitle">Thank you!</h4>
+                    <p>Thank you for your interest. The brochure will be delivered to your registered email address.</p>
+                </div>
+            </div>
+
+            <div class="main-btn-out mt-4 req-brochure-btn">
+                <button type="button" class="close-btn w-50" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- request brochure success message -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>

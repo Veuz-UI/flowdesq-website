@@ -28,86 +28,52 @@
   <!-- loader -->
 
 <header>
-    <!-- nav header -->
-    <div class="main-header">
-      <div class="width-container">
-        <div class="main-header-in">
-          <!-- header logo-->
-          <div class="header-img">
-            <a href="index.html"><img src="assets/img/logo-svg.svg" alt=""></a>
-          </div>
-          <!-- header nav icons -->
-           <div class="nav-desc-menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="demo.html">Demo</a></li>
-              </ul>
-            </div>
-          <div class="right-nav-top">
-            <div class="menu-outr">
-              <div class="menu-button">
-                <div class="" id='btn__line'></div>
-                <i class="fa-solid fa-times close-icon"></i>
-              </div>
-              
-              <!-- manu dropdown -->
-              <div class="menu-overlay">
-                <nav class="menu">
-                  <a href="index.html">Home</a>
-                  <a href="features.html">Features</a>
-                  <a href="pricing.html">Pricing</a>
-                  <a href="demo.html">Demo</a>
-                  <div class="wrap mob-btn">
-                    <a href="signup.html" class="second-btn">Signup for free trial</a>
-                  </div>
-                  <div class="wrap mob-btn">
-                    <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                      Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
-                  </div>
-                </nav>
-              </div>
+  <!-- nav header -->
+  <div class="main-header">
+    <div class="width-container">
+      <div class="main-header-in inner-hero-banner">
+        <!-- header logo-->
+        <div class="header-img">
+          <a href="index.html"><img src="assets/img/logo-svg.svg" alt=""></a>
+        </div>
+        <div class="right-nav-top">
+          <div class="menu-outr">
+            <div class="menu-button">
+              <div class="" id='btn__line'></div>
+              <i class="fa-solid fa-times close-icon"></i>
             </div>
 
-            <div class="wrap desc-btn">
-              <a href="signup.html" class="second-btn">Signup for free trial</a>
-            </div>
-            <div class="wrap desc-btn">
-              <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+            <div class="menu-overlay">
+              <nav class="menu">
+                <div class="wrap mob-btn">
+                  <a href="index.html" class="login-btn">
+                    Home <i class="fa-solid fa-house"></i>
+                  </a>
+                </div>
+              </nav>
             </div>
           </div>
+
+          <div class="wrap desc-btn">
+            <a href="index.html" class="login-btn">
+              Home <i class="fa-solid fa-house"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
 
-
-    <!-- slider -->
-    <section class="inner-slider-banner">
-      <div class="inner-banner_slider">
-        <div class="inner-hero-banner">
-        </div>
-      </div>
-    </section>
-
-    <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
-    <div class="download-brochure">
-       DOWNLOAD BROCHURE 
-    </div>
-    </a>
-
-
   <!-- pricing plan -->
-  <section class="section-padding otp">
+  <section class="section-padding otp pt-150">
     <div class="width-container">
 
       <div class="col-md-12 otp-in">
         <div class="row justify-content-center align-items-center">
 
-          <div class="col-md-8">
+          <div class="col-md-10">
             <div class="otp-wrapper">
 
               <div class="step">4 OF 4 STEPS COMPLETED</div>
@@ -142,21 +108,22 @@
                     <button class="main-btn"><i class="fa-brands fa-windows"></i> Download For Windows</button>
                     <button class="main-btn"><i class="fa-brands fa-linux"></i> Linux </button>
                     <button class="main-btn"><i class="fa-brands fa-apple"></i> Mac</button>
+                    <button class="main-btn"><img src="assets/img/logo-icon.svg" class="img-fluid" alt=""> Extensions</button>
                   </div>
                 </div>
               </div>
 
-            <!-- FOOTER -->
-            <div class="main-btn-out mt-4 actions">
-              <a href="login-option2.html"><button class="btn back">Previous Step</button></a>
-              <button type="submit" class="main-btn">I will install later</button>
-            </div>
+              <p class="description text-center mt-5">
+                Having trouble installing <span>FlowDesQ?</span><br>
+                <a href="#">
+                  Click here for help</a>
+              </p>
 
-            <p class="description text-center mt-4">
-              Having trouble installing <span>FlowDesQ?</span><br>
-              <a href="#">
-                Click here for help</a>
-            </p>
+              <!-- FOOTER -->
+              <div class="main-btn-out mt-5 actions">
+                <a href="login-option2.html"><button class="btn back">Previous Step</button></a>
+                <button type="submit" class="main-btn">I will install later</button>
+              </div>
 
             </div>
           </div>
@@ -253,11 +220,9 @@
     </div>
   </section>
 
-  <section class="scroll-bar-out">
-    <div class="r-scroll">
-      <a href="#" id="scroll" style="display: none;"><span></span></a>
-    </div>
-  </section>
+  <div class="r-scroll">
+    <a href="#" id="scroll" style="display: none;"><span><i class="fa-solid fa-arrow-up"></i></span></a>
+  </div>
 
 
 <!-- Modal -->
