@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlowDesQ</title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -13,25 +16,22 @@
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-
-  <!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/xxmzBrw.css"> -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
 
-<!-- loader -->
+  <!-- loader -->
   <div class="main-loader" id="initial-loader">
-    <img src="assets/img/loader.gif" alt="Loading..." />
+    <img id="logo1" src="assets/img/Q-logo.svg" alt="" />
+    <img id="logo2" src="assets/img/logo.png" alt="Loading..." />
   </div>
-<!-- loader -->
+  <!-- loader -->
 
 <header>
     <!-- nav header -->
     <div class="main-header">
       <div class="width-container">
-        <div class="main-header-in">
+        <div class="main-header-in inner-hero-banner">
           <!-- header logo-->
           <div class="header-img">
             <a href="index.html"><img src="assets/img/logo-svg.svg" alt=""></a>
@@ -40,60 +40,53 @@
            <div class="nav-desc-menu">
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html" class="active">Pricing</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="demo.html">Demo</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="demo.html">Request a Demo</a></li>
               </ul>
             </div>
+
           <div class="right-nav-top">
+            
+            <!-- menu -->
             <div class="menu-outr">
               <div class="menu-button">
                 <div class="" id='btn__line'></div>
                 <i class="fa-solid fa-times close-icon"></i>
               </div>
               
-              <!-- manu dropdown -->
+              <!-- menu dropdown -->
               <div class="menu-overlay">
                 <nav class="menu">
                   <a href="index.html">Home</a>
-                  <a href="features.html">Features</a>
+                  <a href="features.html" class="active">Features</a>
                   <a href="pricing.html">Pricing</a>
-                  <a href="enquiry.html">Enquiry</a>
-                  <a href="demo.html">Demo</a>
+                  <li><a href="demo.html" class="active">Request a Demo</a></li>
                   <div class="wrap mob-btn">
-                    <a href="signup.html" class="second-btn">Signup for free trial</a>
+                    <a href="login.html#signup" class="second-btn">Signup for free trial</a>
                   </div>
                   <div class="wrap mob-btn">
-                    <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                      Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+                    <a href="login.html" class="login-btn">
+                      Login <img src="assets/img/person.png" class="img-fluid" alt=""> 
+                    </a>
                   </div>
                 </nav>
               </div>
             </div>
 
             <div class="wrap desc-btn">
-              <a href="signup.html" class="second-btn">Signup for free trial</a>
+              <a href="login.html#signup" class="second-btn">Signup for free trial</a>
             </div>
             <div class="wrap desc-btn">
-              <a class="login-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+              <a href="login.html" class="login-btn">
+                Login <img src="assets/img/person.png" class="img-fluid" alt=""> 
+              </a>
             </div>
           </div>
       </div>
     </div>
   </div>
 </header>
-
-
-
-    <!-- slider -->
-    <section class="inner-slider-banner">
-      <div class="inner-banner_slider">
-        <div class="inner-hero-banner">
-        </div>
-      </div>
-    </section>
 
     <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
     <div class="download-brochure">
@@ -103,7 +96,7 @@
 
 
   <!-- Privacy Policy -->
-  <section class="section-padding terms-conditions">
+  <section class="section-padding terms-conditions pt-150">
     <div class="container">
       <div class="terms-conditions-in">
 
@@ -196,9 +189,9 @@
                     Build to simplify Integrations, track progress and performance, FlowDesQ is your smart employee coordination solution. 
                   </p>
                   <div class="ft-mail">
-                    <a href="mailto:www.flowdesq.com"><i class="fa-solid fa-envelope"></i> www.flowdesq.com </a>
+                    <a href="mailto:support@flowdesq.com"><i class="fa-solid fa-envelope"></i> support@flowdesq.com </a>
                   </div>
-                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 5485 743 679 </a></div>
+                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 548 574 3679 42 </a></div>
                 </div>
               </div>
 
@@ -208,8 +201,8 @@
                   <ul>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html#signup">Download</a></li>
+                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -224,7 +217,7 @@
                   </div>
                   <div class="right-ft-newsletter">
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
                       <div class="input-group-append">
                         <button class="btn" type="button">Subscribe</button>
                       </div>
@@ -236,10 +229,10 @@
 
             <div class="ft-social-media">
               <div class="ft-social-media-in">
-                <a href="#"><span><i class="fa-brands fa-google"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                <a href="https://x.com/flowdesq" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+                <a href="https://www.instagram.com/flowdesq_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
               </div>
             </div>
       </div>
@@ -258,123 +251,95 @@
           </ul>
         </div>
         <div class="right-ft-btm-cont">
-          <span>A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
-          <span>© FlowDesQ 2026. All right reserved</a></span>
+          <span>© FlowDesQ 2026. All right reserved</span>
+          <span class="apr"><img src="assets/img/logo-icon.png" class="img-fluid"> A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="scroll-bar-out">
-    <div class="r-scroll">
-      <a href="#" id="scroll" style="display: none;"><span></span></a>
-    </div>
-  </section>
-  <!-- <i class="fa-solid fa-arrow-up"></i> -->
 
-
-<!-- Modal -->
-<div class="modal nav-request-demo-outr fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header nav-request-demo-head">
-        <div class="nav-request-demo-head-in">
-          <h4 class="modal-title" id="exampleModalLongTitle">Login</h4>
-          <p>Welcome Back! Log in to your account</p>
-        </div>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="nav-request-demo">
-
-          <form class="form-wrapper">
-
-                <div class="floating-label">
-                  <input type="email" placeholder=" " required />
-                  <label>Email Address <span class="required">*</span></label>
-                </div>
-                <div class="floating-label">
-                  <input type="password" placeholder=" " required />
-                  <label>Password <span class="required">*</span></label>
-                </div>
-
-                <div class="main-btn-out mt-4">
-                  <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                  <button class="main-btn">Send Message</button>
-                </div>
-              </form>
-        </div>
-      </div>
-    </div>
+  <div class="r-scroll">
+    <a href="#" id="scroll" style="display: none;"><span><i class="fa-solid fa-arrow-up"></i></span></a>
   </div>
-</div>
-<!-- END Modal -->
 
-
-<!-- Modal -->
-<div class="modal dowload-outr fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <!-- Modal -->
+<div class="modal dowload-outr fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header dowload-head">
         <div class="dowload-head-in">
-          <h4 class="modal-title" id="exampleModalLongTitle">Login</h4>
-          <p>Welcome Back! Log in to your account</p>
+          <h4 class="modal-title" id="exampleModalLongTitle">Enquire Now</h4>
         </div>
         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body pt-0">
         <div class="dowload">
-
           <form class="form-wrapper">
+            <div class="floating-label">
+              <input type="text" placeholder=" " required />
+              <label>Name <span class="required">*</span></label>
+            </div>
 
-                <div class="row">
-                  <div class="col-12 col-sm-6">
-                    <div class="floating-label">
-                      <input type="text" placeholder=" " required />
-                      <label>First Name <span class="required">*</span></label>
-                    </div>
-                  </div>
+            <div class="floating-label">
+              <input type="email" placeholder=" " required />
+              <label>Email <span class="required">*</span></label>
+            </div>
 
-                  <div class="col-12 col-sm-6">
-                    <div class="floating-label">
-                      <input type="text" placeholder=" " required />
-                      <label>Last Name <span class="required">*</span></label>
-                    </div>
-                  </div>
-                </div>
+            <!-- Phone -->
+            <div class="floating-label">
+              <input type="tel" placeholder=" " inputmode="numeric" pattern="[0-9]*" required />
+              <label>Mobile <span class="required">*</span></label>
+            </div>
 
-                <div class="floating-label">
-                  <input type="email" placeholder=" " required />
-                  <label>Email Address <span class="required">*</span></label>
-                </div>
+            <div class="floating-label">
+              <textarea name="message" rows="4" placeholder=" " required></textarea>
+              <label>Message <span class="required">*</span></label>
+            </div>
 
-                 <!-- Phone -->
-                <div class="floating-label">
-                  <input
-                    type="tel"
-                    placeholder=" "
-                    inputmode="numeric"
-                    pattern="[0-9]*"
-                    required
-                  />
-                  <label>Phone Number <span class="required">*</span></label>
-                </div>
-
-                <div class="main-btn-out mt-4">
-                  <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                  <button class="main-btn">Send Message</button>
-                </div>
-              </form>
+            <div class="main-btn-out mt-4 req-brochure-btn">
+              <button type="button" class="close-btn w-100" data-bs-dismiss="modal" aria-label="Close">Close</button>
+              <button type="button" class="main-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- END Modal -->
+
+<!-- request brochure success message -->
+<div class="modal brochure-request-demo-outr fade bd-example-modal-lg" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header brochure-request-demo-head">
+
+                <div class="brochure-request-demo-head-in">
+                    <div class="success-checkmark">
+                        <div class="check-icon">
+                            <span class="icon-line line-tip"></span>
+                            <span class="icon-line line-long"></span>
+                            <div class="icon-circle"></div>
+                            <div class="icon-fix"></div>
+                        </div>
+                    </div>
+                    <h4 class="modal-title" id="exampleModalLongTitle">Thank you!</h4>
+                    <p>Thank you for your interest. The brochure will be delivered to your registered email address.</p>
+                </div>
+            </div>
+
+            <div class="main-btn-out mt-4 req-brochure-btn">
+                <button type="button" class="close-btn w-50" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- request brochure success message -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>

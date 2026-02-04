@@ -1,13 +1,23 @@
 //// loader
 document.addEventListener('DOMContentLoaded', function () {
-  const loader = document.querySelector('.main-loader');
+  const loader = document.getElementById('initial-loader');
+  const logo1 = document.getElementById('logo1');
+  const logo2 = document.getElementById('logo2');
 
-  // Hide loader after content loads
+  // After first zoom animation ends (1.5s)
+  setTimeout(() => {
+    logo1.style.display = 'none';   // Hide first image
+    logo2.style.opacity = '1';      // Show second image
+  }, 500);
+
+  // Hide loader after showing second image
   window.addEventListener('load', function () {
     setTimeout(() => {
-      loader.style.display = 'none';
-
-    }, 1300); // Adjust time as needed
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 300);
+    }, 1000); // total time before loader disappears
   });
 });
 // END pre loader
@@ -107,16 +117,6 @@ dropdownToggles.forEach(toggle => {
 });
 
 
-// // navbar
-// window.addEventListener("scroll", function () {
-//   const navbar = document.querySelector(".main-header");
-//   if (window.scrollY > 200) {
-//       navbar.classList.add("fixed");
-//   } else {
-//       navbar.classList.remove("fixed");
-//   }
-// });
-// navbar
 $(document).ready(function(){
   var docEl = $(document),
       headerEl = $('header'),
@@ -257,6 +257,19 @@ tabButtons.forEach(button => {
             imageTabElement.classList.add('show', 'active');
         }
     });
+});
+
+
+//upgrade checkbox
+document.querySelectorAll('.check-wrap input').forEach(cb => {
+  cb.addEventListener('change', function () {
+
+    // uncheck all others
+    document.querySelectorAll('.check-wrap input').forEach(other => {
+      if (other !== this) other.checked = false;
+    });
+
+  });
 });
 
 
@@ -468,7 +481,6 @@ document.addEventListener("DOMContentLoaded", function () {
     signupTab.show();
   }
 });
-
 // upgrade page
 
   

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlowDesQ</title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -14,22 +17,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 
-  <!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/xxmzBrw.css"> -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
   <!-- Select2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
-
-    <!-- International Tel Input CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+  <!-- International Tel Input CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
 </head>
 
 <body>
 
 <!-- loader -->
   <div class="main-loader" id="initial-loader">
-    <img src="assets/img/loader.gif" alt="Loading..." />
+    <img id="logo1" src="assets/img/Q-logo.svg" alt="" />
+    <img id="logo2" src="assets/img/logo.png" alt="Loading..." />
   </div>
   <!-- loader -->
 
@@ -67,7 +66,7 @@
                   <a href="index.html">Home</a>
                   <a href="features.html" class="active">Features</a>
                   <a href="pricing.html">Pricing</a>
-                  <li><a href="demo.html" class="active">Request a Demo</a></li>
+                  <a href="demo.html" class="active">Request a Demo</a>
                   <div class="wrap mob-btn">
                     <a href="login.html#signup" class="second-btn">Signup for free trial</a>
                   </div>
@@ -102,22 +101,19 @@
 
 
     <!-- productivity -->
-    <section class="flowdesc-teams">
+    <section class="section-padding flowdesc-teams pt-150">
       <div class="width-container">
         <div class="head-title">
-          <h2 class="section-title text-center mt-2">
+          <h1 class="section-title text-center mt-2">
             FlowDesQ <span class="product-heading">Features</span> for <br> Scaling Teams
-          </h2>
+          </h1>
           <p>
             Make your data invisible by generating unlimited identities. <br>
             The next-level in privacy protection for online.
           </p>
         </div>
         <div class="main-btn-out mt-4">
-          <button class="main-btn">Explore Flowdesq</button>
-          <button class="demo-btn"><span>
-              <i class="fa-regular fa-circle-play"></i></span> View Demo
-          </button>
+          <a href="login.html#signup" class="main-btn">Explore Flowdesq</a>
         </div>
       </div>
     </section>
@@ -356,10 +352,10 @@
 
               <div class="head-title m-0 w-100">
                 <h2 class="section-title text-start mt-2">
-                  Attendance and Leave Management 
+                  Reporting & Analytics 
                 </h2>
                 <p class="text-start">
-                  Upgrade your attendance and time tracking. FlowDesq automates attendance, leave, and absence analytics to calibrate team productivity. 
+                  Generate detailed reports with screenshots, activity logs, and productivity scores - all exportable with one click.    
                 </p>
               </div>
               <ul class="feature-list">
@@ -422,7 +418,7 @@
       </div>
 
       <div class="cta-btn">
-        <a href="#">CONNECT WITH US</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">CONNECT WITH US</a>
       </div>
     </div>
     </div>
@@ -538,7 +534,8 @@
       <div class="testimonial-in">
         <div class="row">
           <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
-            <div class="head-title m-0">
+            <div class="head-title m-0 w-100 text-start">
+              <span class="section-title-span p-0">TESTIMONIALS</span>
               <h2 class="text-start">Look What Our <br> Customers Say!</h2>
               <p class="text-start">
                 Fusce venenatis tellus a felis scelerisque, <br> non pulvinar est pellentesque. 
@@ -658,9 +655,9 @@
                     Build to simplify Integrations, track progress and performance, FlowDesQ is your smart employee coordination solution. 
                   </p>
                   <div class="ft-mail">
-                    <a href="mailto:www.flowdesq.com"><i class="fa-solid fa-envelope"></i> www.flowdesq.com </a>
+                    <a href="mailto:support@flowdesq.com"><i class="fa-solid fa-envelope"></i> support@flowdesq.com </a>
                   </div>
-                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 5485 743 679 </a></div>
+                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 548 574 3679 42 </a></div>
                 </div>
               </div>
 
@@ -670,8 +667,8 @@
                   <ul>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html#signup">Download</a></li>
+                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -686,7 +683,7 @@
                   </div>
                   <div class="right-ft-newsletter">
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
                       <div class="input-group-append">
                         <button class="btn" type="button">Subscribe</button>
                       </div>
@@ -698,10 +695,10 @@
 
             <div class="ft-social-media">
               <div class="ft-social-media-in">
-                <a href="#"><span><i class="fa-brands fa-google"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                <a href="https://x.com/flowdesq" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+                <a href="https://www.instagram.com/flowdesq_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
               </div>
             </div>
       </div>
@@ -720,8 +717,8 @@
           </ul>
         </div>
         <div class="right-ft-btm-cont">
-          <span>A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
-          <span>© FlowDesQ 2026. All right reserved</a></span>
+          <span>© FlowDesQ 2026. All right reserved</span>
+          <span class="apr"><img src="assets/img/logo-icon.png" class="img-fluid"> A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
         </div>
       </div>
     </div>

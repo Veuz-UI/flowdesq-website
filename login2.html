@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlowDesQ</title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.css">
@@ -13,17 +16,14 @@
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-
-  <!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/xxmzBrw.css"> -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-
 </head>
 
 <body>
 
 <!-- loader -->
   <div class="main-loader" id="initial-loader">
-    <img src="assets/img/loader.gif" alt="Loading..." />
+    <img id="logo1" src="assets/img/Q-logo.svg" alt="" />
+    <img id="logo2" src="assets/img/logo.png" alt="Loading..." />
   </div>
   <!-- loader -->
 
@@ -73,7 +73,7 @@
         <div class="signup-form">
           <div class="row align-items-center justify-content-between">
 
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-5 left-login-form">
               <div class="signup-form-in-img">
                 <video autoplay="" muted="" loop="" playsinline="">
                   <source src="assets/img/dashboard.webm" type="video/webm">
@@ -81,7 +81,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-6">
+            <div class="col-md-6 col-lg-6 right-login-form">
               <div class="login-form-in">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">
@@ -109,7 +109,7 @@
                       <div class="main-btn-out mt-4 req-brochure-btn justify-content-center">
                         <button type="submit" class="main-btn" onclick="window.location.href='otp.html'">Login</button>
                       </div>
-                      <p class="description">
+                      <p class="description text-center mt-4">
                         Don't have an account ? <a href="#" id="openSignupTab">Sign up</a>
                       </p>
                     </form>
@@ -150,7 +150,7 @@
                       </div>
 
                       <div class="main-btn-out mt-4">
-                        <button type="submit" class="main-btn" onclick="window.location.href='otp2.html'">Purchase Now</button>
+                        <a class="main-btn" href="otp2.html">Purchase Now</a>
                       </div>
                       <p class="description dont-account text-center mt-4">
                         14-Day Free Trial • Cancel Anytime
@@ -188,9 +188,9 @@
                     Build to simplify Integrations, track progress and performance, FlowDesQ is your smart employee coordination solution. 
                   </p>
                   <div class="ft-mail">
-                    <a href="mailto:www.flowdesq.com"><i class="fa-solid fa-envelope"></i> www.flowdesq.com </a>
+                    <a href="mailto:support@flowdesq.com"><i class="fa-solid fa-envelope"></i> support@flowdesq.com </a>
                   </div>
-                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 5485 743 679 </a></div>
+                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 548 574 3679 42 </a></div>
                 </div>
               </div>
 
@@ -200,8 +200,8 @@
                   <ul>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html#signup">Download</a></li>
+                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -216,7 +216,7 @@
                   </div>
                   <div class="right-ft-newsletter">
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
                       <div class="input-group-append">
                         <button class="btn" type="button">Subscribe</button>
                       </div>
@@ -228,10 +228,10 @@
 
             <div class="ft-social-media">
               <div class="ft-social-media-in">
-                <a href="#"><span><i class="fa-brands fa-google"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-x-twitter"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="#"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                <a href="https://x.com/flowdesq" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+                <a href="https://www.instagram.com/flowdesq_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
               </div>
             </div>
       </div>
@@ -250,8 +250,8 @@
           </ul>
         </div>
         <div class="right-ft-btm-cont">
-          <span>A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
-          <span>© FlowDesQ 2026. All right reserved</a></span>
+          <span>© FlowDesQ 2026. All right reserved</span>
+          <span class="apr"><img src="assets/img/logo-icon.png" class="img-fluid"> A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
         </div>
       </div>
     </div>

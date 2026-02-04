@@ -50,6 +50,7 @@
 	.head-title {
 		width: 60%;
 	}
+	.head-title h1,
 	.head-title h2 {
   		font-size: 40px;
 	}
@@ -78,6 +79,17 @@
 	}
 	.testim-in-item h5{
 		font-size: 18px;
+	}
+
+	/* upgrade plan */
+	#scroll {
+		right: 4%;
+		bottom: 15%;
+		width: 50px;
+		height: 50px;
+	}
+	#scroll span i, #scroll span svg {
+  		font-size: 18px;
 	}
 
 }
@@ -115,10 +127,10 @@
   		font-size: 14px;
 	}
 
-	.hero-banner h2 br{
+	.hero-banner h1 br{
 		display: none;
 	}
-	.hero-banner h2 {
+	.hero-banner h1 {
 		font-size: 50px;
 		line-height: 1.2;
 	}
@@ -149,45 +161,6 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 	}
-
-	/* .tabs-outer{
-		order: -1;
-	}
-	.nav-tabs {
-  		width: 100%;
-	}
-	.nav-tabs {
-  		flex-direction: initial;
-		flex-wrap: nowrap;
-		overflow-x: scroll;
-		padding: 5px 0 35px;
-	}
-	.nav-item{
-		width: 30%;
-		min-width: 250px;
-		display: inline-block;
-	}
-	.gradient-box {
-  		padding: 30px;
-	}
-	.nav-tabs .nav-link {
-  		padding: 15px 15px;
-	}
-	.nav-tabs .nav-link.active::before{
-		display: none;
-	}
-	.nav-tabs .nav-link.active::after {
-		top: auto;
-		right: auto;
-		left: 45%;
-		bottom: -25px;
-		transform: translateY(-50%);
-		font-size: 20px;
-		rotate: 90deg;
-	}
-	.tabs-outer{
-		padding-bottom: 20px;
-	} */
 
 	.ft-btm-cont {
   		gap: 10px;
@@ -229,6 +202,7 @@
 	.head-title {
 		width: 100%;
 	}
+	.head-title h1,
 	.head-title h2 {
 		font-size: 35px;
 	}
@@ -434,6 +408,10 @@
  		 width: 12px;
 	}
 
+	.pt-150{
+		padding-top: 100px !important;
+	}
+
 	
 }
 
@@ -496,7 +474,7 @@
 		margin-bottom: 10px;
 	}
 
-	.hero-banner h2 {
+	.hero-banner h1 {
 		font-size: 32px;
 	}
 	.hero-banner .subtitle {
@@ -545,7 +523,7 @@
 		width: 22px;
 	}
 
-	.hero-banner h2 {
+	.hero-banner h1 {
     	font-size: 35px;
 	}
 	.testimonial-in .text-start br{
@@ -613,6 +591,13 @@
 		box-shadow: none;
 		padding: 20px;
 	}
+	.right-login-form{
+		order: -1;
+	}
+	.login-form-in {
+		padding: 40px 40px 40px 40px;
+		margin: 80px 0 40px;
+	}
 
 	.faq-header h3 {
 		font-size: 2rem;
@@ -666,22 +651,6 @@
 	.menu-button.open .close-icon {
 		right: 0%;
 	}
-
-	/* .inner-banner {
-		height: 300px;
-	}
-	.inner-banner-content{
-		padding-right: 0;
-	}
-	.inner-banner-cont {
-		padding-bottom: 60px;
-	}
-	.inner-banner-cont button{
-		display: none;
-	}
-	.inner-banner-content h3 {
-		font-size: 25px;
-	} */
 	.header-img {
 		width: 115px;
 	}
@@ -767,6 +736,7 @@
   		padding: 30px 20px;
 	}
 
+	.demo-enquire-head h1,
 	.demo-enquire-head h2 {
   		font-size: 25px;
 	}
@@ -777,6 +747,13 @@
 
 	.key-feature-card-img {
 		height: 250px;
+	}
+
+	.feature-item {
+  		display: block;
+	}
+	.feature-content h3 {
+  		font-size: 18px;
 	}
 
 	.stats-box {
@@ -797,6 +774,7 @@
 		line-height: 25px;
 	}
 
+	.head-title h1,
 	.head-title h2 {
 		font-size: 25px;
 	}
@@ -833,6 +811,13 @@
         padding-left: initial;
     }
 
+	.login-form-in {
+    	padding: 15px;
+	}
+	.login-form-in ul li button {
+  		font-size: 16px;
+	}
+
 	/* pricing table */
 	.table-head-overview,
 	.table-head-inner {
@@ -847,13 +832,19 @@
 	.upgrade-mode {
   		width: 49%;
 	}
-	
+	.upgrade-plan-in {
+		padding: 0px;
+		background-color: transparent;
+	}
+	.right-upgrade-plan-detls h5 {
+  		font-size: 16px;
+	}
 
 }
 
 @media (max-width: 576px) {
 
-	.hero-banner h2 {
+	.hero-banner h1 {
 		font-size: 30px;
 	}
 	.hero-banner {
@@ -870,7 +861,7 @@
   		margin: 0 auto 20px;
 		max-width: 100%;
 	}
-	.hero-banner h2 {
+	.hero-banner h1 {
 		margin-bottom: 10px;
 	}
 
