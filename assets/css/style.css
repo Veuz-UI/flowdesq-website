@@ -3275,27 +3275,6 @@ header.fixed-to-top .header-img{
   color: #4f46e5;
   text-decoration: none;
 }
-
-@media (max-width: 600px) {
-  .otp-wrapper {
-    padding: 25px 15px;
-  }
-  .otp-wrapper .otp-box {
-    padding: 30px 15px;
-  }
-  .otp-wrapper .otp-inputs input {
-    width: 45px;
-    height: 45px;
-  }
-  .otp-wrapper .otp-inputs {
-    gap: 5px;
-  }
-
-  .otp-wrapper h3 {
-    font-size: 25px;
-  }
-
-}
 /* END otp */
 
 

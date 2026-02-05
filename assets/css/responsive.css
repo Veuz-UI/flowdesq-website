@@ -727,6 +727,47 @@
 		margin-bottom: 10px;
 	}
 
+	.otp-wrapper {
+		padding: 25px 15px;
+	}
+	.otp-wrapper .otp-box {
+		padding: 30px 15px;
+	}
+	.otp-wrapper .otp-inputs input {
+		width: 45px;
+		height: 45px;
+	}
+	.otp-wrapper .otp-inputs {
+		gap: 5px;
+	}
+
+	.otp-wrapper h3 {
+		font-size: 20px;
+	}
+
+	.option-card .icon img {
+		width: 40px;
+		height: 40px;
+	}
+	.download-pg-btn i, .download-pg-btn svg {
+		font-size: 16px;
+	}
+
+	.main-btn img{
+		width: 18px;
+	}
+
+	.close-btn,
+	.main-btn,
+	.actions .back,
+	.demo-btn {
+  		font-size: 14px;
+	}
+
+	.demo-btn i, .demo-btn svg {
+		font-size: 18px;
+	}
+
 	.description {
 		font-size: 16px;
 		line-height: 22px;
