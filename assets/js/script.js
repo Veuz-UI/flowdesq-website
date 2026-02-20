@@ -97,7 +97,6 @@ menuButton.addEventListener('click', () => {
 
 
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-
 dropdownToggles.forEach(toggle => {
   toggle.addEventListener('click', (e) => {
     e.preventDefault();
@@ -289,66 +288,104 @@ $(document).ready(function(){
 });
 
 
-//// otp
-document.addEventListener("DOMContentLoaded", () => {
+// //// otp
+document.addEventListener("DOMContentLoaded", function () {
+
   const inputs = document.querySelectorAll(".otp-inputs input");
   const timerEl = document.getElementById("timer");
   const resendBtn = document.getElementById("resend");
+  const submitBtn = document.getElementById("submitOtp");
 
-  // Auto focus first input
+  // 🚫 Stop script if OTP section not on page
+  if (!inputs.length) return;
+
+  // Focus first input
   inputs[0].focus();
 
+  // Handle input behavior
   inputs.forEach((input, index) => {
-    input.addEventListener("input", () => {
+
+    // Allow only numbers
+    input.addEventListener("input", (e) => {
+      input.value = input.value.replace(/[^0-9]/g, "");
+
       if (input.value && index < inputs.length - 1) {
         inputs[index + 1].focus();
       }
     });
 
+    // Backspace support
     input.addEventListener("keydown", (e) => {
       if (e.key === "Backspace" && !input.value && index > 0) {
         inputs[index - 1].focus();
       }
     });
 
-    // Paste OTP support
+    // Paste support
     input.addEventListener("paste", (e) => {
-      const data = e.clipboardData.getData("text").split("");
-      inputs.forEach((inp, i) => inp.value = data[i] || "");
       e.preventDefault();
+      const data = e.clipboardData.getData("text").replace(/[^0-9]/g, "");
+      const digits = data.split("");
+
+      inputs.forEach((inp, i) => {
+        inp.value = digits[i] || "";
+      });
+
+      const lastFilled = Math.min(digits.length, inputs.length) - 1;
+      if (lastFilled >= 0) {
+        inputs[lastFilled].focus();
+      }
     });
+
   });
 
-  // Countdown Timer
-  let time = 150;
-  const countdown = setInterval(() => {
-    let min = Math.floor(time / 60);
-    let sec = time % 60;
-    timerEl.textContent = `${min}:${sec < 10 ? "0" : ""}${sec}`;
-    time--;
+  // ⏳ Countdown Timer
+  if (timerEl) {
+    let time = 150;
+    let countdown = startTimer();
 
-    if (time < 0) {
-      clearInterval(countdown);
-      timerEl.textContent = "Expired";
+    function startTimer() {
+      return setInterval(() => {
+        let min = Math.floor(time / 60);
+        let sec = time % 60;
+
+        timerEl.textContent = `${min}:${sec < 10 ? "0" : ""}${sec}`;
+        time--;
+
+        if (time < 0) {
+          clearInterval(countdown);
+          timerEl.textContent = "Expired";
+        }
+      }, 1000);
     }
-  }, 1000);
 
-  // Resend
-  resendBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    time = 150;
-    alert("OTP Resent");
-  });
-
-  // Submit
-  document.getElementById("submitOtp").addEventListener("click", () => {
-    const otp = Array.from(inputs).map(i => i.value).join("");
-    if (otp.length < inputs.length) {
-      alert("Please enter complete OTP");
-      return;
+    // 🔁 Resend OTP
+    if (resendBtn) {
+      resendBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        time = 150;
+        clearInterval(countdown);
+        countdown = startTimer();
+        alert("OTP Resent");
+      });
     }
-    console.log("OTP Submitted:", otp);
-  });
+  }
+
+  // ✅ Submit OTP
+  if (submitBtn) {
+    submitBtn.addEventListener("click", function () {
+      const otp = Array.from(inputs).map(input => input.value).join("");
+
+      if (otp.length < inputs.length) {
+        alert("Please enter complete OTP");
+        return;
+      }
+
+      console.log("OTP Submitted:", otp);
+      // You can send OTP to server here
+    });
+  }
+
 });
 
 // form dropdown
@@ -372,9 +409,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-
-  console.log("JS LOADED");
-
   const headerTHs = document.querySelectorAll(".table-head th[data-col]");
   const tables = document.querySelectorAll(".sticky-table");
 
@@ -387,7 +421,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-
   function highlightColumn(colIndex, className) {
     tables.forEach(table => {
       table.querySelectorAll("tbody tr").forEach(row => {
@@ -398,7 +431,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-
   headerTHs.forEach(th => {
     const col = parseInt(th.dataset.col);
     const inner = th.querySelector(".table-head-inner");
@@ -427,10 +459,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-
   // Default active column (Business)
   document.querySelector('.table-head th[data-col="4"]')?.click();
-
 });
 
 
@@ -459,18 +489,6 @@ document.querySelectorAll('.option-card').forEach(card => {
       card.classList.add('active');
     });
 });
-
-
-// dont have account signup
-document.getElementById('openSignupTab').addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const signupTab = document.querySelector('#profile-tab');
-    const tab = new bootstrap.Tab(signupTab);
-    tab.show();
-});
-
-
 
 // login signup 
 document.addEventListener("DOMContentLoaded", function () {
