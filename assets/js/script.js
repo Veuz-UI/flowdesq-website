@@ -215,50 +215,6 @@ $(document).on('click', '.custom-next', function(e) {
   }
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const sidebarItems = document.querySelectorAll('.sidebar-item');
-  const contentSections = document.querySelectorAll('.content-section');
-
-  sidebarItems.forEach(item => {
-    item.addEventListener('click', function () {
-      const sectionId = this.getAttribute('data-section');
-
-      // Remove active class from all sidebar items
-      sidebarItems.forEach(i => i.classList.remove('active'));
-
-      // Add active class to clicked item
-      this.classList.add('active');
-
-      // Hide all content sections
-      contentSections.forEach(section => section.classList.remove('active'));
-
-      // Show selected content section
-      document.getElementById(sectionId).classList.add('active');
-    });
-  });
-});
-
-// Sync image tabs with content tabs
-const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
-tabButtons.forEach(button => {
-    button.addEventListener('shown.bs.tab', function (event) {
-        const imageId = this.getAttribute('data-image');
-        const imageTabElement = document.querySelector(`#${imageId}`);
-        
-        if (imageTabElement) {
-            // Remove active from all image panes
-            document.querySelectorAll('#imageTabContent .tab-pane').forEach(pane => {
-                pane.classList.remove('show', 'active');
-            });
-            
-            // Activate the target image pane
-            imageTabElement.classList.add('show', 'active');
-        }
-    });
-});
-
-
 //upgrade checkbox
 document.querySelectorAll('.check-wrap input').forEach(cb => {
   cb.addEventListener('change', function () {
@@ -463,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('.table-head th[data-col="4"]')?.click();
 });
 
-
+// upgrade-page
 document.addEventListener("DOMContentLoaded", function () {
   const modes = document.querySelectorAll(".upgrade-mode");
 
@@ -478,6 +434,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//login option2 page
 document.querySelectorAll('.option-card').forEach(card => {
     card.addEventListener('click', () => {
       const group = card.dataset.group;

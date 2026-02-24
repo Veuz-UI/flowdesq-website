@@ -7,13 +7,10 @@
 	--black-color: #000;
 	--gradient: linear-gradient(90deg, #FDC155 0%, #F05950 100%);
   --gradient-reverse: linear-gradient(90deg, #F05950 0%, #FDC155 100%);
-
 	--gradient2: linear-gradient(90deg, #FDB838 0%, #FFD84B 100%);
 	--gradient3: linear-gradient(90deg, #EF473E 0%, #FF0000 100%);
   --button-gradient: linear-gradient(90deg, rgb(253, 162, 58), rgb(248, 79, 57));
   --button-gradient-reverse: linear-gradient(90deg, rgb(248, 79, 57), rgb(253, 162, 58));
-	/* --second-font: 'font-family: "Ubuntu", sans-serif;'; */
-	--second-font: "DM Sans", sans-serif;
 }
 
 html {
@@ -504,7 +501,7 @@ header.fixed-to-top .main-header-in{
 }
 .head-title h1,
 .head-title h2 {
-  font-size: 50px;
+  font-size: 35px;
   color: #000;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1447,11 +1444,14 @@ header.fixed-to-top .main-header-in{
 }
 
 .pricing-card .cta-button svg,
-.pricing-card .main-btn svg {
+.pricing-card .main-btn svg,
+.pricing-card .cta-button i {
+  rotate: -47deg;
   transition: transform 0.3s ease;
 }
 .pricing-card .cta-button:hover svg,
-.pricing-card .main-btn:hover svg {
+.pricing-card .main-btn:hover svg,
+.pricing-card .cta-button:hover i {
   transform: rotate(45deg);
 }
 
@@ -1567,13 +1567,14 @@ header.fixed-to-top .main-header-in{
   border: 1px solid var(--primary-color);
 }
 .table-head-inner .right-table-head svg,
-.table-head-inner .right-table-head svg {
+.table-head-inner .right-table-head i {
   transition: transform 0.3s ease;
+  transform: rotate(-45deg);
 }
 .table-head-inner.active .right-table-head svg,
-.table-head-inner:hover .right-table-head svg {
+.table-head-inner:hover .right-table-head i {
   fill: var(--primary-color);
-  transform: rotate(45deg);
+  transform: rotate(0deg);
 }
 
 .right-table-head{
@@ -1637,7 +1638,7 @@ header.fixed-to-top .main-header-in{
 }
 
 .compare-overview .cross-icon {
-  color: #adb5bd;
+  color: var(--main-color);
   font-size: 25px;
 }
 
@@ -2364,6 +2365,7 @@ header.fixed-to-top .header-img{
 
 /* ----------------- dashboard ---------------- */
 .dashboard{
+  padding-top: 0 !important;
   padding-bottom: 130px !important;
 }
 
@@ -2399,7 +2401,7 @@ header.fixed-to-top .header-img{
 }
 
 .dashboard-in{
-  padding: 50px;
+  padding: 35px;
   border: 1px solid #fff;
   background: #FFFFFF7D;
   backdrop-filter: blur(10px);
@@ -2434,12 +2436,16 @@ header.fixed-to-top .header-img{
 }
 
 .icon-reporting {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: var(--main-color);
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin: 10px 0;
   padding: 10px;
+}
+
+.left-panel .head-title p{
+  margin-bottom: 5px;
 }
 
 .feature-list {
@@ -2449,9 +2455,9 @@ header.fixed-to-top .header-img{
 
 .feature-item {
   display: flex;
-  gap: 25px;
-  margin-bottom: 15px;
-  padding: 20px;
+  gap: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
   border-radius: 14px;
   background: transparent;
   cursor: default;
@@ -2460,10 +2466,10 @@ header.fixed-to-top .header-img{
 }
 
 .feature-number {
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #ff6b6b;
-  min-width: 60px;
+  min-width: 50px;
 }
 
 .feature-content h3 {
@@ -2474,7 +2480,7 @@ header.fixed-to-top .header-img{
 }
 
 .feature-content p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
   line-height: 1.5;
   margin-bottom: 0;
@@ -2490,6 +2496,7 @@ header.fixed-to-top .header-img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 25px;
 }
 /* -----------------END dashboard ----------------- */
 
@@ -3586,8 +3593,6 @@ header.fixed-to-top .header-img{
 .check-wrap input:checked + .custom-check::after{
   display: block;
 }
-
-
 
 .upgrade-plan-in{
   padding: 20px;

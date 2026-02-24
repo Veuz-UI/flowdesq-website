@@ -178,6 +178,34 @@
 	.left-book-session h3 {
   		font-size: 35px;
 	}
+
+	.dashboard-bg-color1, .dashboard-bg-color2{
+		display: none;
+	}
+	.dashboard-in {
+    	padding: 20px;
+	}
+	.right-image {
+		width: 100%;
+		max-height: 400px;
+		overflow: hidden;
+		text-align: center;
+	}
+	.right-image img {
+		width: auto;
+		object-fit: contain;
+		border-radius: 25px;
+		max-height: 400px;
+	}
+	.dashboard-in:nth-child(1),
+	.dashboard-in:nth-child(2),
+	.dashboard-in:nth-child(3),
+	.dashboard-in:nth-child(4),
+	.dashboard-in:nth-child(5),
+	.dashboard-in:nth-child(6){
+		position: relative;
+		top: auto;
+	}
 	
 
 }
@@ -878,6 +906,18 @@
 	}
 	.right-upgrade-plan-detls h5 {
   		font-size: 16px;
+	}
+
+	.left-upgrade {
+		padding: 0;
+		border: 0;
+	}
+	.brochure-request-demo-outr .modal-content {
+		border-radius: 15px;
+		padding: 20px;
+	}
+	.brochure-request-demo-head h4 {
+    	font-size: 20px;
 	}
 
 }
