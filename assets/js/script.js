@@ -22,77 +22,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // END pre loader
 
-//// mobile header
-const menuButton = document.querySelector('.menu-button');
-const menuOverlay = document.querySelector('.menu-overlay');
-const menuItems = document.querySelectorAll('.menu a');
-const html = document.documentElement;
-const body = document.body;
- 
-let isOpen = false;
- 
-// Function to check if it's mobile view
-function isMobileView() {
-  return window.innerWidth <= 992;
-}
- 
-// Function to open the menu
-function openMenu() {
-  html.classList.add('no-scroll');
-  body.classList.add('no-scroll');
- 
-  // Slide in menu from right
-  gsap.to(menuOverlay, {
-    duration: 0.5,
-    right: '0%',
-    ease: 'power3.out'
-  });
- 
-  // Animate menu links
-  gsap.fromTo(menuItems, {
-    opacity: 0,
-    x: 20
-  }, {
-    duration: 0.5,
-    opacity: 1,
-    x: 0,
-    stagger: 0.1,
-    delay: 0.2,
-    ease: 'power3.out'
-  });
-}
- 
-// Function to close the menu
-function closeMenu() {
-  html.classList.remove('no-scroll');
-  body.classList.remove('no-scroll');
- 
-  // Animate links out
-  gsap.to(menuItems, {
-    duration: 0.3,
-    opacity: 0,
-    x: 20,
-    stagger: -0.1
-  });
- 
-  // Slide out menu to the right
-  gsap.to(menuOverlay, {
-    duration: 0.5,
-    right: isMobileView() ? '-100%' : '-50%',
-    delay: 0.3,
-    ease: 'power3.in'
-  });
-}
- 
-// Toggle menu on button click
-menuButton.addEventListener('click', () => {
-  if (!isOpen) {
-    openMenu();
-  } else {
-    closeMenu();
-  }
-  isOpen = !isOpen;
-  menuButton.classList.toggle('open', isOpen);
+// nav Stying for small screens
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".menu-outr");
+    const links = document.querySelectorAll(".nav-links li");
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
+        hamburger.classList.toggle("toggle");
+    });
 });
 
 

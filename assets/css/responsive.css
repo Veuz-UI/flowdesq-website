@@ -263,10 +263,92 @@
 	.main-header-in {
 		padding: 10px 0;
 	}
-	.menu-overlay {
-		width: 100%; 
-		right: -100%;
+
+	/* nav Stying for small screens */
+	.right-nav-top .hamburger {
+		order: 1;
+		display: block;
+		cursor: pointer;
+		z-index: 100;
+		transition: all 0.7s ease;
 	}
+	.right-nav-top .menu-outr {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 99;
+		background: #000;
+		flex-direction: column;
+		clip-path: circle(50px at 90% -20%);
+		-webkit-clip-path: circle(50px at 90% -10%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	.right-nav-top .menu-outr.open {
+		clip-path: circle(2500px at 90% -10%);
+		-webkit-clip-path: circle(2500px at 90% -10%);
+		pointer-events: all;
+	}
+	.right-nav-top .nav-links li {
+		opacity: 0 !important;
+	}
+	.right-nav-top .nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	.right-nav-top .nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	.right-nav-top .nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	.right-nav-top .nav-links li:nth-child(4) {
+		transition: all 0.5s ease 0.7s;
+	}
+	.right-nav-top .nav-links li:nth-child(5) {
+		transition: all 0.5s ease 0.8s;
+	}
+	.right-nav-top .nav-links li:nth-child(6) {
+		transition: all 0.5s ease 0.9s;
+		margin: 0;
+	}
+	.right-nav-top .nav-links li:nth-child(7) {
+		transition: all 0.5s ease 1s;
+		margin: 0;
+	}
+	.right-nav-top li.fade {
+		opacity: 1 !important;
+	}
+	.right-nav-top ul{
+		list-style: none;
+		padding: 80px 10px 10px;
+		margin-bottom: 0;
+	}
+	.right-nav-top .nav-links li {
+		text-align: center;
+		padding-bottom: 16px;
+	}
+	.right-nav-top .nav-links li a{
+		font-size: 18px;
+		font-weight: 300;
+		color: #797979;
+		cursor: pointer;
+	}
+	.right-nav-top .nav-links li a.active {
+		color: var(--main-color);
+	}
+
+	.right-nav-top .desc-btn{
+		display: none;
+	}
+	.right-nav-top .menu .mob-btn {
+        display: block;
+		text-align: center;
+	}
+	/* END nav Stying for small screens */
 
 	.faq-header {
 		margin-bottom: 2rem;
@@ -691,41 +773,39 @@
     	gap: 10px;
 	}
 
-	#btn__line, #btn__line::before, #btn__line::after {
-  		height: 2px;
-	}
-	#btn__line::before {
-  		width: 28px;
-		bottom: 6px;
-	}
-	#btn__line {
-  		width: 20px;
-	}
-	#btn__line::after {
-		width: 10px;
-		top: 6px;
-	}
-	
-	.menu-overlay {
-        padding: 30px 15px;
-    }
-	.nav-contact-btn .btn {
-  		font-size: 12px;
-	}
-	.right-nav-top .anim-btn-1 {
-  		font-size: 12px;
-		width: 110px;
-		height: 30px;
-	}
-	.lang-switch ul li a {
-  		font-size: 12px;
-	}
-
-	.right-nav-top .desc-btn{
-		display: none;
+	.hamburger div {
+		width: 25px;
+		height: 2px;
+		margin: 6px;
 	}
 	.right-nav-top .mob-btn{
 		display: block;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.second-btn,
+	.login-btn {
+		font-size: 16px;
+		padding: 10px 25px;
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	.second-btn {
+		transition: all 0.5s ease 1.2s;
+	}
+	.login-btn {
+		transition: all 0.5s ease 1.4s;
+	}
+
+	/* When menu opens */
+	.right-nav-top .menu-outr.open .second-btn,
+	.right-nav-top .menu-outr.open .login-btn {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.login-btn {
+		border: 0;
+		background: var(--button-gradient);
 	}
 
 	.faq-header h3, .client-header h2 {
