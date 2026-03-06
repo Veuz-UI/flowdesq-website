@@ -1,25 +1,12 @@
 //// loader
 document.addEventListener('DOMContentLoaded', function () {
   const loader = document.getElementById('initial-loader');
-  const logo1 = document.getElementById('logo1');
-  const logo2 = document.getElementById('logo2');
-
-  // After first zoom animation ends (1.5s)
-  setTimeout(() => {
-    logo1.style.display = 'none';   // Hide first image
-    logo2.style.opacity = '1';      // Show second image
-  }, 500);
-
-  // Hide loader after showing second image
-  window.addEventListener('load', function () {
-    setTimeout(() => {
-      loader.style.opacity = '0';
-      setTimeout(() => {
-        loader.style.display = 'none';
-      }, 300);
-    }, 1000); // total time before loader disappears
+  const logo = document.querySelector('.loader');
+  logo.addEventListener('animationend', function () {
+      loader.remove();
   });
 });
+
 // END pre loader
 
 // // nav Stying for small screens
