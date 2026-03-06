@@ -48,25 +48,84 @@
               </ul>
             </div>
           <div class="right-nav-top">
-            <div class="hamburger">
-                  <div class="line1"></div>
-                  <div class="line2"></div>
-                  <div class="line3"></div>
-              </div>
+            <!-- mobile menu -->
             <div class="menu-outr">
-              <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="demo.html">Request a Demo</a></li>
-              </ul>
+              <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+              </button>
+              <div class="overlay-menu" id="overlayMenu">
+                <nav class="overlay-nav">
+                  <ul class="menu-list">
+                    <li class="menu-item" style="animation-delay: 0.1s;">
+                      <a href="index.html" class="menu-link">
+                        <span class="menu-number">01</span>
+                        <span class="menu-text">Home</span>
+                      </a>
+                    </li>
+                    <li class="menu-item" style="animation-delay: 0.2s;">
+                      <a href="features.html" class="menu-link">
+                        <span class="menu-number">02</span>
+                        <span class="menu-text">Features</span>
+                      </a>
+                    </li>
+                    <li class="menu-item" style="animation-delay: 0.3s;">
+                      <a href="pricing.html" class="menu-link">
+                        <span class="menu-number">03</span>
+                        <span class="menu-text">Pricing</span>
+                      </a>
+                    </li>
+                    <li class="menu-item" style="animation-delay: 0.4s;">
+                      <a href="demo.html" class="menu-link">
+                        <span class="menu-number">04</span>
+                        <span class="menu-text">Request a Demo</span>
+                      </a>
+                    </li>
+                  </ul>
 
-              <div class="wrap mob-btn">
-                <a href="login.html#signup" class="second-btn">Signup for free trial</a>
-              </div>
-              <div class="wrap mob-btn">
-                <a class="login-btn" href="login.html">
-                  Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+                  <div class="wrap mob-btn" style="animation-delay: 0.5s;">
+                    <a href="login.html#signup" class="second-btn">Signup for free trial</a>
+                  </div>
+                  <div class="wrap mob-btn">
+                    <a class="login-btn" href="login.html" style="animation-delay: 0.6s;">
+                      Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+                  </div>
+
+                  <div class="menu-footer" style="animation-delay: 0.7s;">
+                    <div class="social-links">
+                      <!-- LinkedIn -->
+                      <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2"/>
+                          <rect x="2" y="9" width="4" height="12" stroke-width="2"/>
+                          <circle cx="4" cy="4" r="2" stroke-width="2"/>
+                        </svg>
+                      </a>
+                      <!-- Twitter -->
+                      <a href="https://x.com/flowdesq" target="_blank" class="social-link" aria-label="X">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z"/>
+                        </svg>
+                      </a>
+                      <!-- Insta -->
+                      <a href="https://www.instagram.com/flowdesq_/" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                          <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
+                          <circle cx="12" cy="12" r="4" stroke-width="2"/>
+                          <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2"/>
+                        </svg>
+                      </a>
+                      <!-- fb -->
+                      <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
               </div>
             </div>
 
@@ -1136,83 +1195,141 @@
 <!-- footer -->
   <section class="footer">
     <div class="width-container">
-      <div class="col-md-12 footer-cont">
-            <div class="left-bottom-logo-out-all">
+      <div class="footer-in">
+        <div class="col-md-12 footer-cont">
+              <div class="left-bottom-logo-out-all">
 
-              <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="left-bottom-logo-out">
-                  <div class="left-bottom-logo">
-                    <img src="assets/img/logo-footer.svg" class="img-fluid" alt="footer-logo">
-                  </div>
-                  <p>
-                    A Smarter Approach for simplified Employee Management.
-                    Build to simplify Integrations, track progress and performance, FlowDesQ is your smart employee coordination solution. 
-                  </p>
-                  <div class="ft-mail">
-                    <a href="mailto:support@flowdesq.com"><i class="fa-solid fa-envelope"></i> support@flowdesq.com </a>
-                  </div>
-                  <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 548 574 3679 42 </a></div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="footer-nav">
-                  <h5>Quick Links</h5>
-                  <ul>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="login.html#signup">Download</a></li>
-                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-12 col-md-12 col-lg-4">
-                <div class="ft-newsletter">
-                  <div class="left-ft-newsletter">
-                    <h6>Join our newsletter</h6>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                  <div class="left-bottom-logo-out">
+                    <div class="left-bottom-logo">
+                      <img src="assets/img/logo.png" class="img-fluid" alt="footer-logo">
+                    </div>
                     <p>
-                      Keep up to date with everything Reflect
+                      A Smarter Approach for simplified Employee Management.
+                      Build to simplify Integrations, track progress and performance, FlowDesQ is your smart employee coordination solution. 
                     </p>
+                    <div class="ft-mail">
+                      <a href="mailto:support@flowdesq.com"><i class="fa-solid fa-envelope"></i> support@flowdesq.com </a>
+                    </div>
+                    <div class="phone-cont mb-1"><a href="tel:+966548574367942"> <i class="fa-solid fa-phone"></i> +966 548 574 3679 42 </a></div>
+                    <div class="ft-social-media">
+                      <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                      <a href="https://x.com/flowdesq" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
+                      <a href="https://www.instagram.com/flowdesq_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                      <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                    </div>
                   </div>
-                  <div class="right-ft-newsletter">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
-                        <button class="btn" type="button">Subscribe</button>
+                </div>
+
+                <div class="col-lg-8">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="footer-nav">
+                        <h5>Quick Links</h5>
+                        <ul>
+                          <li><a href="features.html">Features</a></li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="login.html#signup">Download</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="footer-nav">
+                        <h5>Contacts</h5>
+                        <ul>
+                          <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">Contact</a></li>
+                          <li><a href="#">Feature requests</a></li>
+                          <li><a href="demo.html">Demo Request</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="footer-nav">
+                        <h5>Legal & Compliance</h5>
+                        <ul>
+                          <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                          <li><a href="#">Cookies</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="footer-nav">
+                        <h5>By industries</h5>
+                        <ul>
+                          <li><a href="#">IT & software</a></li>
+                          <li><a href="#">Financial services</a></li>
+                          <li><a href="#">Consultants</a></li>
+                          <li><a href="#">Startups</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="footer-nav">
+                        <h5>By business size</h5>
+                        <ul>
+                          <li><a href="#">Enterprises</a></li>
+                          <li><a href="#">Medium businesses</a></li>
+                          <li><a href="#">Small teams</a></li>
+                          <li><a href="#">Freelancers</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
+                      <div class="ft-newsletter">
+                        <div class="left-ft-newsletter">
+                          <h6>Join our newsletter</h6>
+                          <p>
+                            Keep up to date with everything Reflect
+                          </p>
+                        </div>
+                        <div class="right-ft-newsletter">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn" type="button">Subscribe</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="ft-social-media">
-              <div class="ft-social-media-in">
-                <a href="https://www.facebook.com/share/p/16eRQmT2hi/" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
-                <a href="https://x.com/flowdesq" target="_blank"><span><i class="fa-brands fa-x-twitter"></i></span></a>
-                <a href="https://www.instagram.com/flowdesq_/" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
-                <a href="https://www.linkedin.com/company/flowdesq/about/?viewAsMember=true" target="_blank"><span><i class="fa-brands fa-linkedin"></i></span></a>
+                <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                  <div class="ft-newsletter">
+                    <div class="left-ft-newsletter">
+                      <h6>Join our newsletter</h6>
+                      <p>
+                        Keep up to date with everything Reflect
+                      </p>
+                    </div>
+                    <div class="right-ft-newsletter">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn" type="button">Subscribe</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
               </div>
-            </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="bottom-ft-small">
-    <div class="width-container">
-      <div class="ft-btm-cont">
-        <div class="left-ft-btm-cont">
-          <ul>
-            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="#">Accessibility</a></li>
-            <li><a href="#">Legal</a></li>
-          </ul>
+              
         </div>
-        <div class="right-ft-btm-cont">
-          <span>© FlowDesQ 2026. All right reserved</span>
-          <span class="apr"><img src="assets/img/logo-icon.png" class="img-fluid"> A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
+        <div class="ft-btm-cont">
+          <div class="left-ft-btm-cont">
+            <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
+          <div class="right-ft-btm-cont">
+            <span>© FlowDesQ 2026. All right reserved</span>
+            <span class="apr"><img src="assets/img/logo-icon.png" class="img-fluid"> A Product of <a href="https://www.veuzconcepts.com/"> Veuz Concepts </a>.</span>
+          </div>
         </div>
       </div>
     </div>

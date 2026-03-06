@@ -22,40 +22,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // END pre loader
 
-// nav Stying for small screens
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".menu-outr");
-    const links = document.querySelectorAll(".nav-links li");
+// // nav Stying for small screens
+// document.addEventListener('DOMContentLoaded', function () {
+//     const hamburger = document.querySelector(".hamburger");
+//     const navLinks = document.querySelector(".menu-outr");
+//     const links = document.querySelectorAll(".nav-links li");
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle("open");
-        links.forEach(link => {
-            link.classList.toggle("fade");
-        });
-        hamburger.classList.toggle("toggle");
-    });
-});
+//     hamburger.addEventListener('click', () => {
+//         navLinks.classList.toggle("open");
+//         links.forEach(link => {
+//             link.classList.toggle("fade");
+//         });
+//         hamburger.classList.toggle("toggle");
+//     });
+// });
 
 
-const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-dropdownToggles.forEach(toggle => {
-  toggle.addEventListener('click', (e) => {
-    e.preventDefault();
+// const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+// dropdownToggles.forEach(toggle => {
+//   toggle.addEventListener('click', (e) => {
+//     e.preventDefault();
     
-    const parent = toggle.closest('.menu-dropdown');
+//     const parent = toggle.closest('.menu-dropdown');
 
-    // Close all other dropdowns
-    document.querySelectorAll('.menu-dropdown').forEach(item => {
-      if (item !== parent) {
-        item.classList.remove('open');
-      }
-    });
+//     // Close all other dropdowns
+//     document.querySelectorAll('.menu-dropdown').forEach(item => {
+//       if (item !== parent) {
+//         item.classList.remove('open');
+//       }
+//     });
 
-    // Toggle the clicked one
-    parent.classList.toggle('open');
-  });
-});
+//     // Toggle the clicked one
+//     parent.classList.toggle('open');
+//   });
+// });
 
 
 $(document).ready(function(){
@@ -401,3 +401,47 @@ document.addEventListener("DOMContentLoaded", function () {
 // upgrade page
 
   
+
+
+// mobile menu
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menuToggle');
+  const overlayMenu = document.getElementById('overlayMenu');
+  const header = document.getElementById('header');
+  const menuLinks = document.querySelectorAll('.menu-link');
+  const body = document.body;
+
+  menuToggle.addEventListener('click', () => {
+    const isActive = menuToggle.classList.contains('active');
+    
+    if (isActive) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  function openMenu() {
+    menuToggle.classList.add('active');
+    overlayMenu.classList.add('active');
+    body.classList.add('menu-open');
+  }
+
+  function closeMenu() {
+    menuToggle.classList.remove('active');
+    overlayMenu.classList.remove('active');
+    body.classList.remove('menu-open');
+  }
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlayMenu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+});
