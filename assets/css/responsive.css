@@ -818,13 +818,13 @@
 	.menu-text {
 		font-size: 25px;
 	}
-	.menu-button.open .close-icon {
+	/* .menu-button.open .close-icon {
 		right: 0%;
 	}
 	.header-img {
 		width: 150px;
-	}
-	.menu-button {
+	} */
+	/* .menu-button {
   		width: 30px;
 	}
 	.menu-outr {
@@ -835,11 +835,11 @@
 	}
 	.menu-list {
         margin-bottom: clamp(30px, 6vw, 60px);
-    }
+    } */
 	.right-nav-top .mob-btn{
 		display: block;
 	}
-	.mob-btn{
+	/* .mob-btn{
 		display:block;
 		margin-bottom:30px;
 		opacity:0;
@@ -849,7 +849,7 @@
 	.overlay-menu.active .mob-btn{
 		opacity:1;
 		transform:translateY(0);
-	}
+	} */
 	.right-nav-top .desc-btn{
 		display: none;
 	}
